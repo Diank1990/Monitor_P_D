@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Subvenção FINEP em Fluxo Contínuo – acompanhamento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --papel:#ffffff; --fundo:#f2f4f6; --tinta:#1c2b3a; --suave:#5b6775; --linha:#d8dde3;
+  --aprov:#1f7a55; --aprov-claro:#d6ebe1; --nao:#a8433a; --anal:#8a6110; --acao:#23527c; --marca:#fff3cd;
+  color-scheme: light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --papel:#121820; --fundo:#1a222c; --tinta:#e6ebf0; --suave:#9aa6b2; --linha:#2c3642;
+    --aprov:#4cb38a; --aprov-claro:#1f3a30; --nao:#e07a6f; --anal:#d6a64a; --acao:#7fb2e0; --marca:#3d3418;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --papel:#121820; --fundo:#1a222c; --tinta:#e6ebf0; --suave:#9aa6b2; --linha:#2c3642;
+  --aprov:#4cb38a; --aprov-claro:#1f3a30; --nao:#e07a6f; --anal:#d6a64a; --acao:#7fb2e0; --marca:#3d3418;
+  color-scheme: dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--papel);color:var(--tinta);
+  font:15px/1.5 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  font-variant-numeric:tabular-nums}
+.pagina{max-width:1280px;margin:0 auto;padding:28px 24px 48px}
+a{color:var(--acao)}
+:focus-visible{outline:2px solid var(--acao);outline-offset:2px}
+
+.topo{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:flex-end;justify-content:space-between;
+  border-bottom:1px solid var(--linha);padding-bottom:18px}
+h1{font-size:1.6rem;line-height:1.2;font-weight:600;margin:0 0 4px}
+.meta{margin:0;color:var(--suave);font-size:.9rem}
+.seletor{display:flex;flex-direction:column;gap:4px;font-size:.85rem;color:var(--suave);min-width:min(100%,360px)}
+select,input[type=search],button{font:inherit;color:var(--tinta);background:var(--papel);
+  border:1px solid var(--linha);border-radius:6px;padding:8px 10px}
+button{cursor:pointer}
+button:hover,select:hover{border-color:var(--suave)}
+
+.orcamento{padding:26px 0 22px}
+.orcamento h2{font-size:1.15rem;font-weight:600;margin:0 0 14px}
+.barra{height:28px;border-radius:4px;background:var(--fundo);border:1px solid var(--linha);overflow:hidden;display:flex}
+.barra span{display:block;height:100%;background:var(--aprov)}
+.legenda{display:flex;flex-wrap:wrap;gap:6px 28px;margin:10px 0 0;font-size:.95rem}
+.legenda b{font-weight:600}
+.chip{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:baseline}
+.chip.a{background:var(--aprov)} .chip.d{background:var(--fundo);border:1px solid var(--suave)}
+.analise{margin:10px 0 0;color:var(--suave)}
+.analise b{color:var(--tinta);font-weight:600}
+
+.abas{display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid var(--linha)}
+.abas button{border:none;border-bottom:3px solid transparent;border-radius:0;background:none;
+  padding:10px 14px;color:var(--suave);font-weight:500}
+.abas button[aria-selected="true"]{color:var(--tinta);border-bottom-color:var(--tinta)}
+.abas .n{font-weight:400;color:var(--suave);margin-left:4px}
+
+.ferramentas{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 8px}
+.ferramentas input{flex:1 1 320px}
+.contagem{margin:4px 0 10px;color:var(--suave);font-size:.88rem}
+
+.tabela-wrap{overflow-x:auto;border:1px solid var(--linha);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--linha)}
+th{background:var(--fundo);font-weight:600;white-space:nowrap;position:sticky;top:0;cursor:pointer;user-select:none}
+th[aria-sort="ascending"]::after{content:" ▲";font-size:.7em}
+th[aria-sort="descending"]::after{content:" ▼";font-size:.7em}
+td.num,th.num{text-align:right;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tr.marcada td{background:var(--marca)}
+.cnpj{display:block;color:var(--suave);font-size:.82rem}
+.tag{display:inline-block;font-size:.72rem;font-weight:600;padding:1px 6px;border-radius:3px;margin-left:6px;
+  border:1px solid currentColor;color:var(--anal);vertical-align:1px}
+.sit-Aprovado{color:var(--aprov);font-weight:500}
+.sit-Indeferido,.sit-Reprovado{color:var(--nao);font-weight:500}
+.sit-analise{color:var(--anal);font-weight:500}
+.ver{border:none;background:none;padding:0;color:var(--acao);font-size:.82rem;text-decoration:underline;margin-top:2px}
+tr.resumo td{background:var(--fundo);white-space:pre-line;max-width:80ch;line-height:1.6;color:var(--tinta)}
+.vazio{padding:28px 12px;color:var(--suave)}
+.de{color:var(--suave)}
+.nw{white-space:nowrap}
+
+#evolucao h3{font-size:1rem;font-weight:600;margin:32px 0 10px}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--linha);color:var(--suave);font-size:.84rem}
+footer p{margin:4px 0;max-width:110ch}
+
+@media (max-width:640px){ .pagina{padding:18px 14px 36px} h1{font-size:1.3rem} }
+@media print{
+  .ferramentas,.abas,.seletor,.ver{display:none}
+  body{font-size:10pt} .pagina{max-width:none;padding:0}
+  th{position:static} .tabela-wrap{overflow:visible;border:none}
+  tr.marcada td{background:none}
+}
+</style>
+</head>
+<body>
+<div class="pagina">
+  <header class="topo">
+    <div>
+      <h1>Subvenção FINEP em Fluxo Contínuo</h1>
+      <p class="meta" id="meta"></p>
+    </div>
+    <label class="seletor">Seleção pública
+      <select id="edital"></select>
+    </label>
+  </header>
+
+  <section class="orcamento" id="orcamento" aria-live="polite"></section>
+
+  <nav class="abas" role="tablist" id="abas"></nav>
+
+  <div class="ferramentas">
+    <input type="search" id="busca" placeholder="Buscar por proponente, CNPJ, referência, UF ou linha temática" aria-label="Buscar">
+    <select id="tipo" aria-label="Tipo de alteração" hidden></select>
+    <button id="exportar" type="button">Exportar CSV</button>
+  </div>
+  <p class="contagem" id="contagem"></p>
+  <div class="tabela-wrap"><table id="tabela"></table></div>
+
+  <section id="evolucao"></section>
+
+  <footer>
+    <p><b>Indeferido:</b> não aprovado na Etapa 1 (Habilitação). <b>Reprovado:</b> não aprovado na Etapa 2 (Análise de Mérito).</p>
+    <p><b>Em análise:</b> propostas ainda sem resultado final nas Etapas 1 ou 2, inclusive as indeferidas que estão no prazo de recurso ou com recurso em análise pela FINEP.</p>
+    <p>Referências iniciadas por “#” são identificadores provisórios de propostas que ainda não receberam número de referência.</p>
+    <p>Linhas destacadas mudaram na coleta mais recente. Fonte: <a id="fonte" href="#" target="_blank" rel="noopener">painel público da FINEP</a>.</p>
+  </footer>
+</div>
+
+<script>
+const DADOS = /*__DADOS__*/null;
+const FONTE = "https://app.powerbi.com/view?r=eyJrIjoiYWFlMWVmMDAtMGQyZS00NjFiLTk1OWItY2U4NzVmMzMzZWJlIiwidCI6IjBlNjcyMWViLTczMDUtNDE2YS1hZDJiLWEyNDAwM2EwY2Q2OCJ9";
+
+const P = DADOS.atual.propostas, ED = DADOS.atual.editais;
+const EVENTOS = (DADOS.alteracoes && DADOS.alteracoes.eventos) || [];
+const EXEC = (DADOS.alteracoes && DADOS.alteracoes.execucoes) || [];
+const HIST = DADOS.historico || [];
+const ultima = EXEC[0];
+
+const brl = new Intl.NumberFormat("pt-BR", {style:"currency", currency:"BRL"});
+const inteiro = new Intl.NumberFormat("pt-BR");
+const pct = new Intl.NumberFormat("pt-BR", {style:"percent", minimumFractionDigits:1, maximumFractionDigits:1});
+const um = new Intl.NumberFormat("pt-BR", {minimumFractionDigits:1, maximumFractionDigits:1});
+const dataBR = s => s ? s.slice(0,10).split("-").reverse().join("/") + (s.length > 10 ? " às " + s.slice(11) : "") : "—";
+const compacto = v => v >= 1e9 ? "R$ " + um.format(v/1e9) + " bi" : "R$ " + um.format(v/1e6) + " mi";
+const esc = s => s == null ? "" : String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const chave = p => p.edital + "|" + p.ref;
+
+const marcas = new Map();
+if (ultima && !ultima.carga_inicial)
+  for (const e of EVENTOS) if (e.data === ultima.data && e.ref)
+    marcas.set(e.edital + "|" + e.ref, e.tipo === "Nova proposta" ? "nova" : "alterada");
+
+const estado = {edital:"", aba:"aprovados", busca:"", tipo:"", ordem:null};
+
+const ABAS = [
+  {id:"aprovados", nome:"Aprovados", filtro:p => p.situacao === "Aprovado"},
+  {id:"nao", nome:"Não aprovados", filtro:p => p.situacao === "Indeferido" || p.situacao === "Reprovado"},
+  {id:"analise", nome:"Em análise", filtro:p => p.situacao === "Em análise"},
+  {id:"alteracoes", nome:"Alterações"}
+];
+
+const COL_EDITAL = {k:"edital", t:"Seleção pública"};
+const COLUNAS = {
+  aprovados: [{k:"ref",t:"Ref."},{k:"proponente",t:"Proponente"},{k:"linha",t:"Linha temática"},{k:"uf",t:"UF"},
+              {k:"status",t:"Status"},{k:"valor_aprovado",t:"Valor aprovado",num:1}],
+  nao:       [{k:"ref",t:"Ref."},{k:"proponente",t:"Proponente"},{k:"linha",t:"Linha temática"},{k:"uf",t:"UF"},
+              {k:"situacao",t:"Decisão final"},{k:"valor_solicitado",t:"Valor solicitado",num:1}],
+  analise:   [{k:"ref",t:"Ref."},{k:"proponente",t:"Proponente"},{k:"linha",t:"Linha temática"},{k:"uf",t:"UF"},
+              {k:"fase",t:"Fase"},{k:"valor_solicitado",t:"Valor solicitado",num:1}],
+  alteracoes:[{k:"data",t:"Coleta"},{k:"ref",t:"Ref."},{k:"proponente",t:"Proponente"},{k:"tipo",t:"Alteração"},
+              {k:"de",t:"Antes"},{k:"para",t:"Depois"}]
+};
+
+const $ = id => document.getElementById(id);
+const doEdital = arr => estado.edital ? arr.filter(x => x.edital === estado.edital) : arr;
+const texto = x => Object.values(x).join(" ").toLowerCase() + " " + String(x.cnpj || "").replace(/\D/g, "");
+const comparar = (a, b) => {
+  if (a == null && b == null) return 0; if (a == null) return 1; if (b == null) return -1;
+  return typeof a === "number" ? a - b : String(a).localeCompare(String(b), "pt-BR", {numeric:true});
+};
+const valorEvento = v => typeof v === "number" ? brl.format(v) : (v == null ? "—" : String(v).replace(/valor aprovado (\d+\.\d+)/, (m, n) => "valor aprovado " + brl.format(+n)));
+
+function linhas() {
+  if (estado.aba === "alteracoes") {
+    let r = doEdital(EVENTOS);
+    if (estado.tipo) r = r.filter(e => e.tipo === estado.tipo);
+    return r;
+  }
+  return doEdital(P.filter(ABAS.find(a => a.id === estado.aba).filtro));
+}
+function filtradas() {
+  const termos = estado.busca.toLowerCase().split(/\s+/).filter(Boolean);
+  let r = linhas().filter(x => { const t = texto(x); return termos.every(q => t.includes(q.replace(/[.\/-]/g, "")) || t.includes(q)); });
+  if (estado.ordem) {
+    const {k, dir} = estado.ordem;
+    r = [...r].sort((a, b) => dir * comparar(a[k], b[k]));
+  } else if (estado.aba !== "alteracoes") {
+    r = [...r].sort((a, b) => comparar(a.edital, b.edital) || comparar(a.ref, b.ref));
+  }
+  return r;
+}
+function colunas() {
+  const c = COLUNAS[estado.aba];
+  return estado.edital ? c : [c[0], COL_EDITAL, ...c.slice(1)];
+}
+
+function desenharOrcamento() {
+  const eds = estado.edital ? [estado.edital] : Object.keys(ED);
+  const ps = P.filter(p => eds.includes(p.edital));
+  const total = eds.reduce((s, e) => s + (ED[e].orcamento_total || 0), 0);
+  const aprov = ps.filter(p => p.situacao === "Aprovado").reduce((s, p) => s + (p.valor_aprovado || 0), 0);
+  const disp = total - aprov;
+  const anal = ps.filter(p => p.situacao === "Em análise");
+  const demanda = anal.reduce((s, p) => s + (p.valor_solicitado || 0), 0);
+  const fr = total ? aprov / total : 0;
+  const titulo = estado.edital ? ED[estado.edital].titulo : `Todas as ${eds.length} seleções públicas do painel`;
+  const razao = disp > 0 ? `, ${um.format(demanda / disp).replace(",0", "")} vez${demanda / disp >= 2 ? "es" : ""} o saldo disponível` : "";
+  $("orcamento").innerHTML = `
+    <h2>${esc(titulo)}</h2>
+    <div class="barra" role="img" aria-label="${pct.format(fr)} do orçamento aprovado"><span style="width:${(fr*100).toFixed(2)}%"></span></div>
+    <p class="legenda">
+      <span><i class="chip a"></i>Aprovado <b>${compacto(aprov)}</b> (${pct.format(fr)})</span>
+      <span><i class="chip d"></i>Disponível <b>${compacto(disp)}</b></span>
+      <span>Orçamento total <b>${compacto(total)}</b></span>
+    </p>
+    <p class="analise">Em análise: <b>${inteiro.format(anal.length)} propostas</b> pedindo <b>${compacto(demanda)}</b>${razao}.</p>`;
+}
+
+function desenharAbas() {
+  $("abas").innerHTML = ABAS.map(a => {
+    const n = a.id === "alteracoes" ? doEdital(EVENTOS).length : doEdital(P.filter(a.filtro)).length;
+    return `<button role="tab" data-aba="${a.id}" aria-selected="${a.id === estado.aba}">${a.nome}<span class="n">${inteiro.format(n)}</span></button>`;
+  }).join("");
+}
+
+function celula(c, x) {
+  const v = x[c.k];
+  if (estado.aba === "alteracoes") {
+    if (c.k === "data") return `<td class="nw">${esc(dataBR(v))}</td>`;
+    if (c.k === "de") return `<td class="de">${esc(valorEvento(v))}</td>`;
+    if (c.k === "para") return `<td>${esc(valorEvento(v))}</td>`;
+    if (c.k === "proponente") return `<td>${esc(v || "—")}${x.cnpj ? `<span class="cnpj">${esc(x.cnpj)}</span>` : ""}</td>`;
+    return `<td>${esc(v == null ? "—" : v)}</td>`;
+  }
+  if (c.num) return `<td class="num">${v == null ? "—" : brl.format(v)}</td>`;
+  if (c.k === "proponente") {
+    const m = marcas.get(chave(x));
+    return `<td>${esc(v)}${m ? `<span class="tag">${m}</span>` : ""}<span class="cnpj">${esc(x.cnpj)}</span>${x.resumo ? `<button class="ver" type="button" aria-expanded="false">Ver resumo</button>` : ""}</td>`;
+  }
+  if (c.k === "situacao") return `<td class="nw sit-${esc(v)}">${esc(v)}</td>`;
+  if (c.k === "fase") return `<td class="nw sit-analise">${esc(v || "—")}</td>`;
+  if (c.k === "status" && estado.aba === "aprovados") return `<td class="nw sit-Aprovado">${esc(v || "—")}</td>`;
+  return `<td>${esc(v == null ? "—" : v)}</td>`;
+}
+
+function desenharTabela() {
+  const cols = colunas(), rs = filtradas();
+  const cab = cols.map(c => `<th scope="col" data-k="${c.k}" class="${c.num ? "num" : ""}" ${estado.ordem && estado.ordem.k === c.k ? `aria-sort="${estado.ordem.dir > 0 ? "ascending" : "descending"}"` : ""}>${c.t}</th>`).join("");
+  let corpo;
+  if (!rs.length) {
+    const msg = estado.aba === "alteracoes" && !EVENTOS.length
+      ? "Nenhuma alteração registrada ainda. A primeira comparação acontece na próxima coleta em que o painel da FINEP mudar."
+      : "Nenhum registro corresponde à busca. Limpe o campo de busca ou escolha outra seleção pública.";
+    corpo = `<tr><td class="vazio" colspan="${cols.length}">${msg}</td></tr>`;
+  } else {
+    corpo = rs.map(x => {
+      const m = estado.aba !== "alteracoes" && marcas.has(chave(x));
+      let tr = `<tr class="${m ? "marcada" : ""}">${cols.map(c => celula(c, x)).join("")}</tr>`;
+      if (x.resumo) tr += `<tr class="resumo" hidden><td colspan="${cols.length}">${esc(x.resumo)}</td></tr>`;
+      return tr;
+    }).join("");
+  }
+  $("tabela").innerHTML = `<thead><tr>${cab}</tr></thead><tbody>${corpo}</tbody>`;
+  const total = linhas().length;
+  $("contagem").textContent = rs.length === total
+    ? `${inteiro.format(total)} registro${total === 1 ? "" : "s"}`
+    : `${inteiro.format(rs.length)} de ${inteiro.format(total)} registros`;
+}
+
+function desenharEvolucao() {
+  if (estado.aba !== "alteracoes" || !HIST.length) { $("evolucao").innerHTML = ""; return; }
+  const soma = (h, k) => estado.edital ? (h.editais[estado.edital] || {})[k] : Object.values(h.editais).reduce((s, e) => s + (e[k] || 0), 0);
+  const corpo = HIST.map(h => {
+    const tot = soma(h, "orcamento_total"), ap = soma(h, "valor_aprovado");
+    if (tot == null) return "";
+    return `<tr><td>${esc(dataBR(h.data))}</td><td>${esc(dataBR(h.painel))}</td>
+      <td class="num">${brl.format(ap)}</td><td class="num">${brl.format(soma(h, "orcamento_disponivel"))}</td>
+      <td class="num">${pct.format(tot ? ap / tot : 0)}</td><td class="num">${inteiro.format(soma(h, "aprovados"))}</td>
+      <td class="num">${inteiro.format(soma(h, "nao_aprovados"))}</td><td class="num">${inteiro.format(soma(h, "em_analise"))}</td>
+      <td class="num">${brl.format(soma(h, "demanda_em_analise"))}</td></tr>`;
+  }).join("");
+  $("evolucao").innerHTML = `<h3>Evolução a cada coleta com alteração</h3>
+    <div class="tabela-wrap"><table><thead><tr><th>Coleta</th><th>Painel atualizado em</th><th class="num">Aprovado</th>
+    <th class="num">Disponível</th><th class="num">Utilizado</th><th class="num">Aprovados</th><th class="num">Não aprovados</th>
+    <th class="num">Em análise</th><th class="num">Demanda em análise</th></tr></thead><tbody>${corpo}</tbody></table></div>`;
+}
+
+function desenharTipos() {
+  const sel = $("tipo");
+  sel.hidden = estado.aba !== "alteracoes";
+  const tipos = [...new Set(doEdital(EVENTOS).map(e => e.tipo))].sort();
+  if (!tipos.includes(estado.tipo)) estado.tipo = "";
+  sel.innerHTML = `<option value="">Todos os tipos de alteração</option>` +
+    tipos.map(t => `<option ${t === estado.tipo ? "selected" : ""}>${esc(t)}</option>`).join("");
+}
+
+function desenhar() { desenharOrcamento(); desenharAbas(); desenharTipos(); desenharTabela(); desenharEvolucao(); }
+
+function exportar() {
+  const rs = filtradas();
+  let cols = colunas().map(c => ({k:c.k, t:c.t, num:c.num}));
+  if (estado.aba !== "alteracoes") {
+    if (estado.edital) cols.unshift({k:"edital", t:"Seleção pública"});
+    cols.splice(cols.findIndex(c => c.k === "proponente") + 1, 0, {k:"cnpj", t:"CNPJ"});
+    if (estado.aba === "aprovados") cols.push({k:"resumo", t:"Resumo publicável"});
+  } else {
+    cols.splice(1, 0, {k:"edital", t:"Seleção pública"}, {k:"painel", t:"Painel atualizado em"});
+    cols.splice(cols.findIndex(c => c.k === "proponente") + 1, 0, {k:"cnpj", t:"CNPJ"});
+  }
+  const cel = (v, c) => {
+    if (v == null) return "";
+    if (typeof v === "number") return v.toFixed(2).replace(".", ",");
+    return `"${String(v).replace(/"/g, '""')}"`;
+  };
+  const csv = [cols.map(c => `"${c.t}"`).join(";"), ...rs.map(x => cols.map(c => cel(x[c.k], c)).join(";"))].join("\r\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob(["\ufeff" + csv], {type:"text/csv;charset=utf-8"}));
+  const nome = (estado.edital || "todos-os-editais").normalize("NFD").replace(/[^\w]+/g, "-").replace(/^-|-$/g, "");
+  a.download = `finep-${ABAS.find(b => b.id === estado.aba).id}-${nome}.csv`;
+  document.body.appendChild(a); a.click(); a.remove();
+}
+
+// Inicialização
+$("fonte").href = FONTE;
+$("meta").textContent = `Painel da FINEP atualizado em ${dataBR(DADOS.atual.painel_atualizado_em)}. ` +
+  (ultima ? (ultima.carga_inicial ? `Acompanhamento iniciado em ${dataBR(ultima.data)}.` :
+    `Última alteração registrada em ${dataBR(ultima.data)}.`) : "");
+$("edital").innerHTML = `<option value="">Todas as seleções públicas</option>` +
+  Object.keys(ED).sort().map(e => `<option>${esc(e)}</option>`).join("");
+$("edital").addEventListener("change", e => { estado.edital = e.target.value; estado.ordem = null; desenhar(); });
+$("abas").addEventListener("click", e => {
+  const b = e.target.closest("button[data-aba]"); if (!b) return;
+  estado.aba = b.dataset.aba; estado.ordem = null; desenhar();
+});
+$("busca").addEventListener("input", e => { estado.busca = e.target.value; desenharTabela(); });
+$("tipo").addEventListener("change", e => { estado.tipo = e.target.value; desenharTabela(); });
+$("exportar").addEventListener("click", exportar);
+$("tabela").addEventListener("click", e => {
+  const th = e.target.closest("th[data-k]");
+  if (th) {
+    const k = th.dataset.k;
+    estado.ordem = estado.ordem && estado.ordem.k === k ? {k, dir: -estado.ordem.dir} : {k, dir: 1};
+    desenharTabela(); return;
+  }
+  const b = e.target.closest(".ver");
+  if (b) {
+    const det = b.closest("tr").nextElementSibling;
+    det.hidden = !det.hidden;
+    b.setAttribute("aria-expanded", String(!det.hidden));
+    b.textContent = det.hidden ? "Ver resumo" : "Ocultar resumo";
+  }
+});
+desenhar();
+</script>
+</body>
+</html>
