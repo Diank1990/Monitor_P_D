@@ -1,0 +1,19 @@
+{
+  "reserva_regional": {
+    "percentual_padrao": 0.30,
+    "regioes": ["Norte", "Nordeste", "Centro-Oeste"]
+  },
+  "editais": {
+    "Mais Inovação - Saúde / Empresas - 2": {
+      "orcamento_por_linha": {
+        "Linha temática I - Insumos Farmacêuticos Ativos (IFAs)": 45000000,
+        "Linha temática II - Produtos Biológicos e Biossimilares": 45000000,
+        "Linha temática III - Pesquisa Clínica": 30000000,
+        "Linha temática IV - Terapias Avançadas": 90000000,
+        "Linha temática V - Dispositivos Médicos": 45000000,
+        "Linha temática VI - Vacinas": 45000000
+      },
+      "fonte": "Distribuição por linha temática do Anexo 1 do edital. Conferir em caso de retificação."
+    }
+  }
+}

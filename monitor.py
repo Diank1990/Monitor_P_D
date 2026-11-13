@@ -7,7 +7,7 @@ A cada execução:
   2. compara com a versão anterior salva em data/atual.json;
   3. se algo mudou, registra as alterações em data/alteracoes.json, guarda a versão
      anterior em data/versoes/ e regera index.html.
-Se nada mudou, não grava nada.
+Se nada mudou nos dados, apenas regera index.html (para refletir mudanças em regras.json ou modelo.html).
 """
 import base64, datetime, gzip, hashlib, json, sys
 from pathlib import Path
@@ -229,7 +229,7 @@ def comparar(ant, novo, data_exec):
 
     for k in entraram:
         p = N[k]
-        add("Nova proposta", p, None, p["situacao"] + (f" ({p['fase']})" if p["fase"] else ""))
+        add("Incluída no painel", p, None, p["situacao"] + (f" ({p['fase']})" if p["fase"] else ""))
     for k in sairam:
         p = A[k]
         add("Proposta retirada do painel", p, p["situacao"] + (f" ({p['fase']})" if p["fase"] else ""), None)
@@ -273,7 +273,9 @@ def impressao(snap):
 
 def gerar_html():
     modelo = (RAIZ / "modelo.html").read_text("utf-8")
-    pacote = {"atual": ler("atual.json", None), "alteracoes": ler("alteracoes.json", {}), "historico": ler("historico.json", [])}
+    regras = RAIZ / "regras.json"
+    pacote = {"atual": ler("atual.json", None), "alteracoes": ler("alteracoes.json", {}), "historico": ler("historico.json", []),
+              "regras": json.loads(regras.read_text("utf-8")) if regras.exists() else {}}
     js = json.dumps(pacote, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     (RAIZ / "index.html").write_text(modelo.replace("/*__DADOS__*/null", js), "utf-8")
 
@@ -285,6 +287,7 @@ def main():
     novo = extrair()
     anterior = ler("atual.json", None)
     if anterior and impressao({k: anterior[k] for k in ("painel_atualizado_em", "editais", "propostas")}) == impressao(novo):
+        gerar_html()
         print(f"{data_exec}: nenhuma alteração no painel (atualizado em {novo['painel_atualizado_em']}).")
         return
 

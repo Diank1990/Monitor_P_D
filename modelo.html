@@ -87,13 +87,39 @@ tr.resumo td{background:var(--fundo);white-space:pre-line;max-width:80ch;line-he
 .de{color:var(--suave)}
 .nw{white-space:nowrap}
 
+#analise h3{font-size:1rem;font-weight:600;margin:28px 0 10px}
+.explica{color:var(--suave);font-size:.88rem;margin:14px 0;max-width:100ch}
+.aviso{background:var(--marca);padding:10px 12px;border-radius:6px;font-size:.88rem;margin:12px 0}
+tr.total td{font-weight:600;background:var(--fundo)}
+tr.grupo td{font-weight:600}
+td.sub{padding-left:28px}
+#analise td.txt{min-width:240px}
+th.grupo-th{text-align:center;border-left:1px solid var(--linha)}
+.mini{display:inline-block;width:64px;height:8px;border-radius:2px;background:var(--fundo);border:1px solid var(--linha);
+  vertical-align:middle;margin-right:8px;overflow:hidden}
+.mini span{display:block;height:100%;background:var(--aprov)}
+.ok{color:var(--aprov);font-weight:500}
+.falta{color:var(--anal);font-weight:500}
+.sim-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 16px;margin:18px 0 4px;align-items:end}
+.campo{display:flex;flex-direction:column;gap:4px;font-size:.85rem;color:var(--suave)}
+.campo.largo{grid-column:1/-1}
+.check{display:flex;gap:8px;align-items:center;font-size:.9rem;padding-bottom:9px}
+input[type=number]{font:inherit;color:var(--tinta);background:var(--papel);border:1px solid var(--linha);border-radius:6px;padding:8px 10px}
+.veredito{margin:18px 0 8px;padding:14px 16px;border-left:4px solid var(--suave);background:var(--fundo);border-radius:0 6px 6px 0;max-width:100ch}
+.veredito.sim{border-left-color:var(--aprov)}
+.veredito.nao{border-left-color:var(--nao)}
+.veredito p{margin:4px 0}
+.memoria{max-width:760px}
+.memoria td:first-child{color:var(--suave)}
+details>summary{cursor:pointer;font-weight:600;margin:22px 0 10px}
+
 #evolucao h3{font-size:1rem;font-weight:600;margin:32px 0 10px}
 footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--linha);color:var(--suave);font-size:.84rem}
 footer p{margin:4px 0;max-width:110ch}
 
 @media (max-width:640px){ .pagina{padding:18px 14px 36px} h1{font-size:1.3rem} }
 @media print{
-  .ferramentas,.abas,.seletor,.ver{display:none}
+  .ferramentas,.abas,.seletor,.ver,.sim-form{display:none}
   body{font-size:10pt} .pagina{max-width:none;padding:0}
   th{position:static} .tabela-wrap{overflow:visible;border:none}
   tr.marcada td{background:none}
@@ -122,7 +148,8 @@ footer p{margin:4px 0;max-width:110ch}
     <button id="exportar" type="button">Exportar CSV</button>
   </div>
   <p class="contagem" id="contagem"></p>
-  <div class="tabela-wrap"><table id="tabela"></table></div>
+  <div class="tabela-wrap" id="lista"><table id="tabela"></table></div>
+  <section id="analise" hidden></section>
 
   <section id="evolucao"></section>
 
@@ -153,17 +180,72 @@ const compacto = v => v >= 1e9 ? "R$ " + um.format(v/1e9) + " bi" : "R$ " + um.f
 const esc = s => s == null ? "" : String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const chave = p => p.edital + "|" + p.ref;
 
+// Regiões, reserva regional e bases orçamentárias (seleção pública ou linha temática)
+const REGRAS = DADOS.regras || {};
+const RES_PADRAO = (REGRAS.reserva_regional && REGRAS.reserva_regional.percentual_padrao != null)
+  ? REGRAS.reserva_regional.percentual_padrao : 0.30;
+const REGIAO = {AC:"Norte",AP:"Norte",AM:"Norte",PA:"Norte",RO:"Norte",RR:"Norte",TO:"Norte",
+  AL:"Nordeste",BA:"Nordeste",CE:"Nordeste",MA:"Nordeste",PB:"Nordeste",PE:"Nordeste",PI:"Nordeste",RN:"Nordeste",SE:"Nordeste",
+  DF:"Centro-Oeste",GO:"Centro-Oeste",MT:"Centro-Oeste",MS:"Centro-Oeste",
+  ES:"Sudeste",MG:"Sudeste",RJ:"Sudeste",SP:"Sudeste",PR:"Sul",RS:"Sul",SC:"Sul"};
+const REGIOES = ["Norte","Nordeste","Centro-Oeste","Sudeste","Sul","Não informada"];
+const reservada = r => r === "Norte" || r === "Nordeste" || r === "Centro-Oeste";
+for (const p of P) p.regiao = REGIAO[p.uf] || "Não informada";
+for (const e of EVENTOS) if (e.tipo === "Nova proposta") e.tipo = "Incluída no painel";
+
+const norm = s => String(s || "").toLowerCase().replace(/[–—]/g, "-").replace(/\s+/g, " ").trim();
+const cfg = ed => (REGRAS.editais || {})[ed] || {};
+const pctReserva = ed => cfg(ed).percentual_reserva != null ? cfg(ed).percentual_reserva : RES_PADRAO;
+const porLinha = ed => !!cfg(ed).orcamento_por_linha;
+const chaveBase = p => porLinha(p.edital) ? p.edital + "||" + norm(p.linha) : p.edital;
+const soma = (arr, k) => arr.reduce((s, x) => s + (x[k] || 0), 0);
+const pct0 = new Intl.NumberFormat("pt-BR", {style:"percent", maximumFractionDigits:1});
+const tdN = (v, f) => v == null ? `<td class="num">—</td>` : `<td class="num" data-v="${v}">${f(v)}</td>`;
+
+function listarBases(eds) {
+  const out = [];
+  for (const ed of eds) {
+    if (!porLinha(ed)) { out.push({id:ed, edital:ed, linha:null, orcamento:ED[ed].orcamento_total, pct:pctReserva(ed)}); continue; }
+    const conf = cfg(ed).orcamento_por_linha, nomes = new Map();
+    for (const k of Object.keys(conf)) nomes.set(norm(k), {nome:k, orc:conf[k]});
+    for (const p of P) if (p.edital === ed && p.linha) {
+      const n = norm(p.linha);
+      if (nomes.has(n)) nomes.get(n).nome = p.linha; else nomes.set(n, {nome:p.linha, orc:null});
+    }
+    [...nomes.entries()].sort((a, b) => comparar(a[1].nome, b[1].nome))
+      .forEach(([n, v]) => out.push({id:ed + "||" + n, edital:ed, linha:v.nome, orcamento:v.orc, pct:pctReserva(ed)}));
+  }
+  return out;
+}
+
+function situacaoBase(b) {
+  const ps = P.filter(p => chaveBase(p) === b.id);
+  const ap = ps.filter(p => p.situacao === "Aprovado"), an = ps.filter(p => p.situacao === "Em análise");
+  const Ar = soma(ap.filter(p => reservada(p.regiao)), "valor_aprovado");
+  const Ao = soma(ap.filter(p => !reservada(p.regiao)), "valor_aprovado");
+  const B = b.orcamento, R = B == null ? null : B * b.pct;
+  return {ps, ap, an, Ar, Ao, B, R,
+    falta: R == null ? null : Math.max(0, R - Ar),
+    saldoR: B == null ? null : Math.max(0, B - Ar - Ao),
+    saldoO: B == null ? null : Math.max(0, B - Math.max(R, Ar) - Ao),
+    demandaR: soma(an.filter(p => reservada(p.regiao)), "valor_solicitado")};
+}
+
 const marcas = new Map();
 if (ultima && !ultima.carga_inicial)
   for (const e of EVENTOS) if (e.data === ultima.data && e.ref)
-    marcas.set(e.edital + "|" + e.ref, e.tipo === "Nova proposta" ? "nova" : "alterada");
+    marcas.set(e.edital + "|" + e.ref, e.tipo === "Incluída no painel" ? "nova" : "alterada");
 
-const estado = {edital:"", aba:"aprovados", busca:"", tipo:"", ordem:null};
+const estado = {edital:"", aba:"aprovados", busca:"", tipo:"", ordem:null,
+  sim:{alvo:null, merito:null, hab:null, reserva:true, excl:new Set(), filaAberta:null}};
 
 const ABAS = [
   {id:"aprovados", nome:"Aprovados", filtro:p => p.situacao === "Aprovado"},
   {id:"nao", nome:"Não aprovados", filtro:p => p.situacao === "Indeferido" || p.situacao === "Reprovado"},
   {id:"analise", nome:"Em análise", filtro:p => p.situacao === "Em análise"},
+  {id:"distribuicao", nome:"Por linha e UF", analitica:true},
+  {id:"reserva", nome:"Reserva regional", analitica:true},
+  {id:"simulacao", nome:"Simulação", analitica:true},
   {id:"alteracoes", nome:"Alterações"}
 ];
 
@@ -180,6 +262,7 @@ const COLUNAS = {
 };
 
 const $ = id => document.getElementById(id);
+const analitica = () => !!(ABAS.find(a => a.id === estado.aba) || {}).analitica;
 const doEdital = arr => estado.edital ? arr.filter(x => x.edital === estado.edital) : arr;
 const texto = x => Object.values(x).join(" ").toLowerCase() + " " + String(x.cnpj || "").replace(/\D/g, "");
 const comparar = (a, b) => {
@@ -236,8 +319,8 @@ function desenharOrcamento() {
 
 function desenharAbas() {
   $("abas").innerHTML = ABAS.map(a => {
-    const n = a.id === "alteracoes" ? doEdital(EVENTOS).length : doEdital(P.filter(a.filtro)).length;
-    return `<button role="tab" data-aba="${a.id}" aria-selected="${a.id === estado.aba}">${a.nome}<span class="n">${inteiro.format(n)}</span></button>`;
+    const n = a.analitica ? null : a.id === "alteracoes" ? doEdital(EVENTOS).length : doEdital(P.filter(a.filtro)).length;
+    return `<button role="tab" data-aba="${a.id}" aria-selected="${a.id === estado.aba}">${a.nome}${n == null ? "" : `<span class="n">${inteiro.format(n)}</span>`}</button>`;
   }).join("");
 }
 
@@ -253,7 +336,7 @@ function celula(c, x) {
   if (c.num) return `<td class="num">${v == null ? "—" : brl.format(v)}</td>`;
   if (c.k === "proponente") {
     const m = marcas.get(chave(x));
-    return `<td>${esc(v)}${m ? `<span class="tag">${m}</span>` : ""}<span class="cnpj">${esc(x.cnpj)}</span>${x.resumo ? `<button class="ver" type="button" aria-expanded="false">Ver resumo</button>` : ""}</td>`;
+    return `<td>${esc(v)}${m ? `<span class="tag">${m}</span>` : ""}<span class="cnpj">${esc(x.cnpj)}</span>${x.resumo ? `<button class="ver" type="button" aria-expanded="false">Ver resumo</button>` : ""}${estado.aba === "analise" ? `<button class="ver sim-btn" type="button" data-chave="${esc(chave(x))}">Simular</button>` : ""}</td>`;
   }
   if (c.k === "situacao") return `<td class="nw sit-${esc(v)}">${esc(v)}</td>`;
   if (c.k === "fase") return `<td class="nw sit-analise">${esc(v || "—")}</td>`;
@@ -312,9 +395,248 @@ function desenharTipos() {
     tipos.map(t => `<option ${t === estado.tipo ? "selected" : ""}>${esc(t)}</option>`).join("");
 }
 
-function desenhar() { desenharOrcamento(); desenharAbas(); desenharTipos(); desenharTabela(); desenharEvolucao(); }
+function metricas(ps) {
+  const ap = ps.filter(p => p.situacao === "Aprovado");
+  const na = ps.filter(p => p.situacao === "Indeferido" || p.situacao === "Reprovado");
+  const an = ps.filter(p => p.situacao === "Em análise");
+  return {na:ap.length, va:soma(ap, "valor_aprovado"), nn:na.length, vn:soma(na, "valor_solicitado"),
+          ne:an.length, ve:soma(an, "valor_solicitado"), taxa:ap.length + na.length ? ap.length / (ap.length + na.length) : null};
+}
+const celsMetricas = m => tdN(m.na, inteiro.format) + tdN(m.va, brl.format) + tdN(m.nn, inteiro.format) + tdN(m.vn, brl.format) +
+  tdN(m.ne, inteiro.format) + tdN(m.ve, brl.format) + tdN(m.taxa, pct.format);
+const cabMetricas = primeira => `<tr><th rowspan="2">${primeira}</th><th colspan="2" class="grupo-th">Aprovados</th>
+  <th colspan="2" class="grupo-th">Não aprovados</th><th colspan="2" class="grupo-th">Em análise</th><th rowspan="2" class="num">Taxa de aprovação</th></tr>
+  <tr><th class="num">Qtd.</th><th class="num">Valor aprovado</th><th class="num">Qtd.</th><th class="num">Valor solicitado</th>
+  <th class="num">Qtd.</th><th class="num">Valor solicitado</th></tr>`;
+const editaisVisiveis = () => estado.edital ? [estado.edital] : Object.keys(ED).sort(comparar);
+
+function desenharDistribuicao() {
+  const eds = editaisVisiveis(), ps = P.filter(p => eds.includes(p.edital)), varios = !estado.edital;
+  let porLinhaHtml = "";
+  for (const ed of eds) {
+    const pe = ps.filter(p => p.edital === ed);
+    if (varios) porLinhaHtml += `<tr class="grupo"><td class="txt">${esc(ed)}</td>${celsMetricas(metricas(pe))}</tr>`;
+    for (const l of [...new Set(pe.map(p => p.linha || "Não informada"))].sort(comparar))
+      porLinhaHtml += `<tr><td class="txt${varios ? " sub" : ""}">${esc(l)}</td>${celsMetricas(metricas(pe.filter(p => (p.linha || "Não informada") === l)))}</tr>`;
+  }
+  porLinhaHtml += `<tr class="total"><td>Total</td>${celsMetricas(metricas(ps))}</tr>`;
+  let porUf = "";
+  for (const r of REGIOES) {
+    const pr = ps.filter(p => p.regiao === r);
+    if (!pr.length) continue;
+    porUf += `<tr class="grupo"><td>${r}</td>${celsMetricas(metricas(pr))}</tr>`;
+    for (const uf of [...new Set(pr.map(p => p.uf || "—"))].sort())
+      porUf += `<tr><td class="sub">${esc(uf)}</td>${celsMetricas(metricas(pr.filter(p => (p.uf || "—") === uf)))}</tr>`;
+  }
+  porUf += `<tr class="total"><td>Total</td>${celsMetricas(metricas(ps))}</tr>`;
+  $("analise").innerHTML = `
+    <p class="explica">Taxa de aprovação: aprovados ÷ (aprovados + não aprovados), por número de propostas. As propostas em análise não entram na taxa. O estado é a UF do projeto informada no painel.</p>
+    <h3>Por linha temática</h3>
+    <div class="tabela-wrap"><table><thead>${cabMetricas(varios ? "Seleção pública / linha temática" : "Linha temática")}</thead><tbody>${porLinhaHtml}</tbody></table></div>
+    <h3>Por região e estado</h3>
+    <div class="tabela-wrap"><table><thead>${cabMetricas("Região / UF")}</thead><tbody>${porUf}</tbody></table></div>`;
+}
+
+function desenharReserva() {
+  const eds = editaisVisiveis();
+  const linhas = listarBases(eds).map(b => {
+    const s = situacaoBase(b);
+    const nome = estado.edital ? `<td class="txt">${esc(b.linha || b.edital)}</td>`
+      : `<td class="txt">${esc(b.edital)}${b.linha ? `<span class="cnpj">${esc(b.linha)}</span>` : ""}</td>`;
+    if (s.B == null) return `<tr>${nome}<td colspan="8" class="de">Orçamento desta linha não informado em regras.json.</td></tr>`;
+    const fr = s.R ? s.Ar / s.R : 1;
+    const sit = s.falta <= 0.005 ? `<span class="ok">Atingida</span>` : `<span class="falta">Faltam ${brl.format(s.falta)}</span>`;
+    return `<tr>${nome}${tdN(s.B, brl.format)}<td class="num" data-v="${s.R}">${brl.format(s.R)}<span class="cnpj">${pct0.format(b.pct)} do orçamento</span></td>
+      ${tdN(s.Ar, brl.format)}<td class="nw" data-v="${fr}"><span class="mini"><span style="width:${(Math.min(1, fr) * 100).toFixed(1)}%"></span></span>${pct.format(fr)}<br>${sit}</td>
+      ${tdN(s.Ao, brl.format)}${tdN(s.saldoR, brl.format)}${tdN(s.saldoO, brl.format)}${tdN(s.demandaR, brl.format)}</tr>`;
+  }).join("");
+  let avisos = "";
+  for (const ed of eds) if (porLinha(ed)) {
+    const t = Object.values(cfg(ed).orcamento_por_linha).reduce((a, b) => a + b, 0);
+    if (Math.abs(t - (ED[ed].orcamento_total || 0)) > 1)
+      avisos += `<p class="aviso">A soma dos orçamentos por linha de ${esc(ed)} em regras.json (${brl.format(t)}) é diferente do orçamento do painel (${brl.format(ED[ed].orcamento_total)}). Confira a distribuição por linha no edital.</p>`;
+  }
+  $("analise").innerHTML = `
+    <p class="explica">A reserva é calculada sobre o orçamento de cada seleção pública e, nas seleções configuradas por linha (como Saúde), sobre o orçamento de cada linha temática. A região é a da UF do projeto informada no painel. Enquanto a reserva não é atingida, a parte que falta fica separada para propostas de Norte, Nordeste e Centro-Oeste, e o saldo para as demais regiões já a desconta.</p>
+    ${avisos}
+    <div class="tabela-wrap"><table><thead><tr><th>${estado.edital && porLinha(estado.edital) ? "Linha temática" : "Seleção pública / linha"}</th><th class="num">Orçamento</th><th class="num">Reserva N/NE/CO</th>
+      <th class="num">Aprovado N/NE/CO</th><th>Reserva atingida</th><th class="num">Aprovado demais regiões</th><th class="num">Saldo para N/NE/CO</th>
+      <th class="num">Saldo para demais regiões</th><th class="num">Em análise N/NE/CO</th></tr></thead><tbody>${linhas}</tbody></table></div>`;
+}
+
+// Simulação da fila
+const ordemFila = p => {
+  const m = /^(\d+)\/(\d+)$/.exec(p.ref || "");
+  return m ? [0, +m[2], +m[1]] : [1, 0, +String(p.ref || "").replace(/\D/g, "") || 0];
+};
+const antes = (a, b) => { const x = ordemFila(a), y = ordemFila(b); for (let i = 0; i < 3; i++) if (x[i] !== y[i]) return x[i] - y[i]; return 0; };
+const baseDe = p => listarBases([p.edital]).find(b => b.id === chaveBase(p));
+const linhaCurta = l => String(l || "").replace(/^Linha temática\s+/i, "L. ");
+
+function taxasPadrao(b) {
+  const conta = ps => {
+    const a = ps.filter(p => p.situacao === "Aprovado").length, r = ps.filter(p => p.situacao === "Reprovado").length;
+    const i = ps.filter(p => p.situacao === "Indeferido").length;
+    return {a, r, i, n:a + r + i};
+  };
+  const niveis = [[b.linha ? "nesta linha temática" : "nesta seleção pública", P.filter(p => chaveBase(p) === b.id)],
+                  ["nesta seleção pública", P.filter(p => p.edital === b.edital)], ["em todas as seleções do painel", P]];
+  for (const [rot, ps] of niveis) {
+    const c = conta(ps);
+    if (c.n >= 10 || ps === P) return {rot, c, merito:c.a + c.r ? c.a / (c.a + c.r) : 0, hab:c.n ? c.a / c.n : 0};
+  }
+}
+
+function aplicarPadroes() {
+  const sim = estado.sim, alvo = P.find(p => chave(p) === sim.alvo);
+  sim.excl = new Set(); sim.filaAberta = null;
+  if (!alvo) return;
+  const t = taxasPadrao(baseDe(alvo));
+  sim.merito = Math.round(t.merito * 100); sim.hab = Math.round(t.hab * 100);
+}
+
+function calcular(st, alvo, fila, fM, fH, comReserva) {
+  const B = st.B, R = comReserva ? st.R : 0;
+  let Ar = st.Ar, Ao = st.Ao, consumo = 0;
+  for (const p of fila) {
+    const v = (p.fase === "Análise de Mérito" ? fM : fH) * (p.valor_solicitado || 0);
+    const lim = reservada(p.regiao) ? B - Ar - Ao : B - Math.max(R, Ar) - Ao;
+    const a = Math.max(0, Math.min(v, lim));
+    if (reservada(p.regiao)) Ar += a; else Ao += a;
+    consumo += a;
+  }
+  const disp = Math.max(0, reservada(alvo.regiao) ? B - Ar - Ao : B - Math.max(R, Ar) - Ao);
+  return {disp, consumo, cabe:disp + 0.005 >= alvo.valor_solicitado};
+}
+
+function desenharSimulacao() {
+  if (!estado.edital) {
+    $("analise").innerHTML = `<p class="vazio">Escolha uma seleção pública no seletor acima para simular a posição de uma proposta na fila.</p>`;
+    return;
+  }
+  const sim = estado.sim;
+  const cand = P.filter(p => p.edital === estado.edital && p.situacao === "Em análise").sort(antes);
+  if (sim.alvo && !cand.some(p => chave(p) === sim.alvo)) { sim.alvo = null; aplicarPadroes(); }
+  if (!cand.length) { $("analise").innerHTML = `<p class="vazio">Não há propostas em análise nesta seleção pública.</p>`; return; }
+  const opts = cand.map(p => `<option value="${esc(chave(p))}"${chave(p) === sim.alvo ? " selected" : ""}>${esc(p.ref)} – ${esc(p.proponente)} – ${p.valor_solicitado == null ? "sem valor" : brl.format(p.valor_solicitado)}${porLinha(p.edital) ? " – " + esc(linhaCurta(p.linha)) : ""}</option>`).join("");
+  $("analise").innerHTML = `
+    <div class="sim-form">
+      <label class="campo largo">Proposta em análise<select id="sim-alvo"><option value="">Escolha uma proposta</option>${opts}</select></label>
+      <label class="campo">Aprovação esperada das propostas à frente em Análise de Mérito (%)<input id="sim-merito" type="number" min="0" max="100" step="1"></label>
+      <label class="campo">Aprovação esperada das propostas à frente em Habilitação (%)<input id="sim-hab" type="number" min="0" max="100" step="1"></label>
+      <label class="check"><input id="sim-reserva" type="checkbox"${sim.reserva ? " checked" : ""}>Aplicar a reserva regional de N, NE e CO</label>
+    </div>
+    <div id="sim-res"></div>`;
+  $("sim-merito").value = sim.merito ?? ""; $("sim-hab").value = sim.hab ?? "";
+  $("sim-alvo").addEventListener("change", e => { sim.alvo = e.target.value || null; aplicarPadroes(); desenharSimulacao(); });
+  const lerPct = el => Math.min(100, Math.max(0, +el.value || 0));
+  $("sim-merito").addEventListener("input", e => { sim.merito = lerPct(e.target); atualizarSimulacao(); });
+  $("sim-hab").addEventListener("input", e => { sim.hab = lerPct(e.target); atualizarSimulacao(); });
+  $("sim-reserva").addEventListener("change", e => { sim.reserva = e.target.checked; atualizarSimulacao(); });
+  $("sim-res").addEventListener("change", e => {
+    const k = e.target.dataset.excl; if (k == null) return;
+    if (e.target.checked) sim.excl.delete(k); else sim.excl.add(k);
+    atualizarSimulacao();
+  });
+  $("sim-res").addEventListener("toggle", e => { if (e.target.tagName === "DETAILS") sim.filaAberta = e.target.open; }, true);
+  atualizarSimulacao();
+}
+
+function atualizarSimulacao() {
+  const sim = estado.sim, out = $("sim-res");
+  if (!out) return;
+  const alvo = P.find(p => chave(p) === sim.alvo);
+  if (!alvo) { out.innerHTML = `<p class="explica">Escolha uma proposta para verificar se o saldo alcança a sua posição na fila. Também é possível clicar em “Simular” na aba Em análise.</p>`; return; }
+  const b = baseDe(alvo), st = situacaoBase(b), t = taxasPadrao(b);
+  const nomeBase = b.linha ? `a ${esc(b.linha)}` : "a seleção pública";
+  if (st.B == null) { out.innerHTML = `<p class="aviso">O orçamento da linha ${esc(alvo.linha)} não está informado em regras.json.</p>`; return; }
+  if (alvo.valor_solicitado == null) { out.innerHTML = `<p class="aviso">Esta proposta ainda não tem valor solicitado no painel, por isso não é possível simular.</p>`; return; }
+  const fila = st.an.filter(p => p !== alvo && antes(p, alvo) < 0).sort(antes);
+  const consid = fila.filter(p => !sim.excl.has(chave(p)));
+  const fM = (sim.merito ?? 0) / 100, fH = (sim.hab ?? 0) / 100;
+  const r = calcular(st, alvo, consid, fM, fH, sim.reserva), r0 = calcular(st, alvo, consid, 0, 0, sim.reserva);
+  let virada;
+  if (calcular(st, alvo, consid, 1, 1, sim.reserva).cabe) virada = 1;
+  else if (!r0.cabe) virada = null;
+  else { let lo = 0, hi = 1; for (let i = 0; i < 40; i++) { const m = (lo + hi) / 2; if (calcular(st, alvo, consid, m, m, sim.reserva).cabe) lo = m; else hi = m; } virada = lo; }
+  const dif = r.disp - alvo.valor_solicitado;
+  const reg = reservada(alvo.regiao) ? "Norte, Nordeste e Centro-Oeste" : "demais regiões";
+  const frase = r.cabe
+    ? `<b>Alcançada no cenário informado.</b> Depois das propostas à frente, restam ${brl.format(r.disp)} disponíveis para esta proposta, que pede ${brl.format(alvo.valor_solicitado)} (folga de ${brl.format(dif)}).`
+    : `<b>Não alcançada no cenário informado.</b> Depois das propostas à frente, restam ${brl.format(r.disp)} disponíveis para esta proposta, que pede ${brl.format(alvo.valor_solicitado)} (faltam ${brl.format(-dif)}).`;
+  const fraseVirada = virada === 1 ? "A proposta é alcançada mesmo que todas as propostas à frente sejam aprovadas pelo valor integral."
+    : virada == null ? "Não há saldo para esta proposta mesmo que nenhuma proposta à frente seja aprovada."
+    : `Ponto de virada: a proposta é alcançada enquanto até <b>${pct.format(virada)}</b> do valor das propostas à frente for aprovado (mesma taxa para todas as fases).`;
+  const nM = consid.filter(p => p.fase === "Análise de Mérito"), nH = consid.filter(p => p.fase !== "Análise de Mérito");
+  const memo = [
+    [`Orçamento d${b.linha ? "a linha" : "a seleção pública"}`, brl.format(st.B), st.B],
+    ["Reserva para N, NE e CO", sim.reserva ? `${brl.format(st.R)} (${pct0.format(b.pct)})` : "não aplicada", sim.reserva ? st.R : ""],
+    ["Já aprovado em N, NE e CO", brl.format(st.Ar), st.Ar],
+    ["Já aprovado nas demais regiões", brl.format(st.Ao), st.Ao],
+    [`Saldo disponível hoje para propostas de ${reg}`, brl.format(r0.disp), r0.disp],
+    ["Propostas à frente consideradas", `${inteiro.format(consid.length)} de ${inteiro.format(fila.length)} (${inteiro.format(nM.length)} em Análise de Mérito, ${inteiro.format(nH.length)} em Habilitação)`, consid.length],
+    ["Valor solicitado pelas propostas à frente consideradas", brl.format(soma(consid, "valor_solicitado")), soma(consid, "valor_solicitado")],
+    ["Consumo esperado pelas propostas à frente", brl.format(r.consumo), r.consumo],
+    ["Saldo para esta proposta depois da fila", brl.format(r.disp), r.disp],
+    ["Valor solicitado por esta proposta", brl.format(alvo.valor_solicitado), alvo.valor_solicitado],
+    [r.cabe ? "Folga" : "Falta", brl.format(Math.abs(dif)), Math.abs(dif)]
+  ].map(([k, v, n]) => `<tr><td>${k}</td><td class="num" data-v="${n}">${v}</td></tr>`).join("");
+  const aberta = sim.filaAberta ?? fila.length <= 25;
+  const linhasFila = fila.map((p, i) => `<tr><td><input type="checkbox" data-excl="${esc(chave(p))}"${sim.excl.has(chave(p)) ? "" : " checked"} aria-label="Considerar ${esc(p.ref)}"></td>
+    <td class="num">${i + 1}</td><td>${esc(p.ref)}</td><td>${esc(p.proponente)}<span class="cnpj">${esc(p.cnpj)}</span></td>
+    <td>${esc(p.uf || "—")}</td><td class="nw sit-analise">${esc(p.fase || "—")}</td>${tdN(p.valor_solicitado, brl.format)}</tr>`).join("");
+  out.innerHTML = `
+    <p class="explica">Taxas observadas ${t.rot}: ${pct.format(t.merito)} na Análise de Mérito (${inteiro.format(t.c.a)} aprovadas de ${inteiro.format(t.c.a + t.c.r)} decididas no mérito) e ${pct.format(t.hab)} desde a Habilitação (${inteiro.format(t.c.a)} aprovadas de ${inteiro.format(t.c.n)} decididas). Os campos acima começam com esses valores.</p>
+    <div class="veredito ${r.cabe ? "sim" : "nao"}">
+      <p>Proposta ${esc(alvo.ref)}, ${esc(alvo.proponente)} (${esc(alvo.uf || "UF não informada")}, ${esc(alvo.regiao)}), ${esc(alvo.fase || "")}, posição ${inteiro.format(fila.length + 1)} na fila d${nomeBase}.</p>
+      <p>${frase}</p><p>${fraseVirada}</p>
+    </div>
+    <h3>Memória de cálculo</h3>
+    <div class="tabela-wrap memoria"><table><tbody>${memo}</tbody></table></div>
+    <details${aberta ? " open" : ""}><summary>Propostas à frente na fila (${inteiro.format(fila.length)})</summary>
+      <p class="explica">Desmarque as propostas que você sabe que não seguirão (desistência, indeferimento iminente etc.).</p>
+      <div class="tabela-wrap"><table><thead><tr><th>Considerar</th><th class="num">Posição</th><th>Ref.</th><th>Proponente</th><th>UF</th><th>Fase</th><th class="num">Valor solicitado</th></tr></thead>
+      <tbody>${linhasFila || `<tr><td class="vazio" colspan="7">Nenhuma proposta à frente.</td></tr>`}</tbody></table></div>
+    </details>
+    <p class="explica">Premissas: a fila segue o número de referência, como aproximação da ordem de protocolo, porque o painel não publica a data de envio; propostas ainda sem referência (“#”) ficam no fim. Cada proposta aprovada recebe o valor solicitado. A reserva regional funciona como piso garantido para N, NE e CO enquanto não é atingida. Propostas posteriores na fila não são consideradas.</p>`;
+}
+
+function exportarAnalise() {
+  const linhasCsv = [];
+  const cel = c => {
+    const v = c.dataset.v;
+    if (v !== undefined && v !== "" && !isNaN(+v)) { const n = +v; return Number.isInteger(n) ? String(n) : String(+n.toFixed(6)).replace(".", ","); }
+    return `"${c.innerText.split(/\n+/).map(x => x.trim()).filter(Boolean).join(" – ").replace(/"/g, '""')}"`;
+  };
+  const linhaCsv = tr => [...tr.children].flatMap(c => [cel(c), ...Array(Math.max(0, (c.colSpan || 1) - 1)).fill("")]).join(";");
+  document.querySelectorAll("#analise table").forEach((t, i) => {
+    let ant = t.closest(".tabela-wrap").previousElementSibling;
+    while (ant && ant.tagName !== "H3" && ant.tagName !== "SUMMARY") ant = ant.previousElementSibling;
+    if (i) linhasCsv.push("");
+    if (ant) linhasCsv.push(`"${ant.textContent.trim()}"`);
+    t.querySelectorAll("tr").forEach(tr => linhasCsv.push(linhaCsv(tr)));
+  });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob(["\ufeff" + linhasCsv.join("\r\n")], {type:"text/csv;charset=utf-8"}));
+  const nome = (estado.edital || "todos-os-editais").normalize("NFD").replace(/[^\w]+/g, "-").replace(/^-|-$/g, "");
+  a.download = `finep-${estado.aba}-${nome}.csv`;
+  document.body.appendChild(a); a.click(); a.remove();
+}
+
+function desenhar() {
+  desenharOrcamento(); desenharAbas();
+  const an = analitica();
+  $("busca").hidden = an; $("contagem").hidden = an; $("lista").hidden = an; $("analise").hidden = !an;
+  if (an) {
+    $("tipo").hidden = true; $("evolucao").innerHTML = "";
+    ({distribuicao:desenharDistribuicao, reserva:desenharReserva, simulacao:desenharSimulacao})[estado.aba]();
+  } else {
+    $("analise").innerHTML = ""; desenharTipos(); desenharTabela(); desenharEvolucao();
+  }
+}
 
 function exportar() {
+  if (analitica()) return exportarAnalise();
   const rs = filtradas();
   let cols = colunas().map(c => ({k:c.k, t:c.t, num:c.num}));
   if (estado.aba !== "alteracoes") {
@@ -359,6 +681,14 @@ $("tabela").addEventListener("click", e => {
     const k = th.dataset.k;
     estado.ordem = estado.ordem && estado.ordem.k === k ? {k, dir: -estado.ordem.dir} : {k, dir: 1};
     desenharTabela(); return;
+  }
+  const sb = e.target.closest(".sim-btn");
+  if (sb) {
+    const p = P.find(x => chave(x) === sb.dataset.chave);
+    estado.edital = p.edital; $("edital").value = p.edital;
+    estado.aba = "simulacao"; estado.ordem = null; estado.sim.alvo = chave(p); aplicarPadroes();
+    desenhar(); $("abas").scrollIntoView({block:"start"});
+    return;
   }
   const b = e.target.closest(".ver");
   if (b) {

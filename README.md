@@ -4,13 +4,33 @@ Coleta diariamente o painel público da FINEP, compara com a coleta anterior, re
 
 ## O que fica registrado
 
-- `index.html`: a página, com seletor de seleção pública, abas Aprovados / Não aprovados / Em análise / Alterações, busca e exportação em CSV.
+- `index.html`: a página, com seletor de seleção pública, abas Aprovados / Não aprovados / Em análise / Por linha e UF / Reserva regional / Simulação / Alterações, busca e exportação em CSV.
 - `data/atual.json`: a versão mais recente dos dados.
-- `data/alteracoes.json`: o registro de alterações (novas propostas, mudança de situação, de status, de fase, de valor, número de referência atribuído, propostas retiradas do painel, novos editais, mudança de orçamento).
+- `data/alteracoes.json`: o registro de alterações (propostas incluídas no painel, mudança de situação, de status, de fase, de valor, número de referência atribuído, propostas retiradas do painel, novos editais, mudança de orçamento).
 - `data/historico.json`: os indicadores de cada edital a cada coleta com alteração.
 - `data/versoes/`: cópia compactada de cada versão anterior.
 
 O robô só grava quando o painel muda. Cada gravação vira um commit no GitHub, o que preserva também o histórico completo dos arquivos.
+
+## Abas de análise
+
+- **Por linha e UF:** aprovados, não aprovados e em análise (quantidade e valor) por linha temática e por região/estado da UF do projeto, com a taxa de aprovação.
+- **Reserva regional:** para cada seleção pública (ou cada linha, quando configurado), o valor reservado a Norte, Nordeste e Centro-Oeste, quanto já foi aprovado nessas regiões, se a reserva foi atingida e o saldo disponível para cada grupo de regiões.
+- **Simulação:** escolha uma proposta em análise (ou clique em "Simular" na aba Em análise) e veja se o saldo alcança a posição dela na fila, com a taxa de aprovação esperada das propostas à frente, o ponto de virada e a memória de cálculo.
+
+## Regras dos editais (`regras.json`)
+
+O arquivo `regras.json` guarda o que o painel da FINEP não informa:
+
+- `reserva_regional.percentual_padrao`: percentual da reserva para N, NE e CO (padrão `0.30`).
+- `editais.<nome>.percentual_reserva`: percentual diferente para uma seleção específica (opcional).
+- `editais.<nome>.orcamento_por_linha`: orçamento de cada linha temática, para seleções em que orçamento e reserva valem por linha (hoje, Saúde). Os nomes das linhas devem ser iguais aos do painel.
+
+O nome da seleção deve ser igual ao do seletor da página. Para editar, abra o arquivo no GitHub, clique no lápis, altere e salve: a página é regerada na próxima coleta (ou em **Actions > Run workflow**). A aba Reserva regional avisa quando a soma das linhas difere do orçamento do painel.
+
+## Como atualizar a ferramenta
+
+Para substituir o código por uma versão nova, envie em **Add file > Upload files** apenas `monitor.py`, `modelo.html`, `regras.json` e `README.md`. Não envie a pasta `data` nem o `index.html`: eles são mantidos pelo robô. Depois, rode **Actions > Atualizar painel FINEP > Run workflow** para regerar a página na hora.
 
 ## Como colocar no ar (GitHub, gratuito)
 
