@@ -1,5 +1,5 @@
 {
- "painel_atualizado_em": "2026-11-11",
+ "painel_atualizado_em": "2026-11-12",
  "editais": {
   "Cooperamais Brasil - Empresas": {
    "titulo": "Finep Cooperamais Brasil Tecnologias – Empresas",
@@ -247,7 +247,7 @@
    "linha": "Linha Temática II – Sustentabilidade econômica para Base Industrial de Defesa (BID)",
    "uf": "BA",
    "situacao": "Aprovado",
-   "status": "Em contratação",
+   "status": "Em execução",
    "fase": null,
    "valor_aprovado": 28061161.42,
    "valor_solicitado": null,
@@ -1815,7 +1815,7 @@
    "linha": "Linha Temática III – Pesquisa, Desenvolvimento e Inovação em Alimentos",
    "uf": "SC",
    "situacao": "Aprovado",
-   "status": "Em contratação",
+   "status": "Em execução",
    "fase": null,
    "valor_aprovado": 4805000.0,
    "valor_solicitado": null,
@@ -1946,6 +1946,34 @@
    "valor_aprovado": 6524751.4,
    "valor_solicitado": null,
    "resumo": "O projeto propõe o desenvolvimento e a validação, em escala piloto, de uma rota tecnológica nacional para produção de bioinsumos agrícolas a partir de resíduos proteicos da cadeia do couro bovino. A proposta parte da experiência já acumulada pela AMINNOVATIO no aproveitamento desses resíduos para obtenção de fertilizantes à base de aminoácidos e busca avançar para uma nova geração de formulações bioestimulantes/biofertilizantes, mais padronizadas, rastreáveis e direcionadas a diferentes fases do desenvolvimento das plantas.\n\nA inovação central está na transformação de uma matriz residual complexa, historicamente associada a passivos ambientais da indústria coureira, em insumos agrícolas de maior valor agregado. Para isso, o projeto prevê estudos de caracterização da matéria-prima, controle das condições de hidrólise, separação, concentração e fracionamento de aminoácidos, peptídeos e compostos orgânicos solúveis, além do controle e reciclagem tecnológica do cromo presente na matriz residual. A proposta está alinhada aos princípios da economia circular, da bioeconomia e da valorização sustentável de resíduos industriais.\n\nDiferentemente da produção convencional de hidrolisados proteicos de aplicação geral, o projeto busca identificar quais frações de aminoácidos livres, combinações de aminoácidos, cadeias peptídicas de diferentes massas moleculares e compostos orgânicos associados apresentam maior potencial de atuação agronômica. As formulações serão desenvolvidas para funções específicas, como estímulo ao enraizamento, melhoria da absorção de nutrientes, apoio ao crescimento vegetativo, suporte às fases reprodutivas e aumento da eficiência de uso e assimilação de nitrogênio, fósforo e potássio pelas plantas.\n\nAs etapas técnicas incluem hidrólise química e enzimática, seleção de frações funcionais, caracterização química dos perfis de aminoácidos e peptídeos, combinação com nutrientes minerais, avaliação de estabilidade físico-química, compatibilidade biológica e validações agronômicas em ambiente relevante. Também serão avaliados os efeitos das formulações sobre o desenvolvimento das plantas, a eficiência nutricional, a microbiota associada à rizosfera e processos relacionados ao metabolismo do nitrogênio.\n\nComo resultado, espera-se obter protótipos líquidos caracterizados, estáveis e padronizados, com recomendação de uso por fase fenológica, incluindo formulações voltadas ao desenvolvimento inicial e formação de raízes, ao crescimento vegetativo e às fases de maior demanda nutricional e produtiva. O projeto também deverá gerar parâmetros críticos de processo para produção piloto, critérios de qualidade, rastreabilidade, controle de contaminantes e dados técnicos necessários para futura regularização, proteção intelectual, escalonamento industrial e inserção comercial.\n\nSob a perspectiva ambiental, tecnológica e socioeconômica, a proposta contribui para reduzir passivos da cadeia do couro, ampliar o aproveitamento de matérias-primas nacionais e fortalecer o desenvolvimento de bioinsumos agrícolas sustentáveis no Brasil. Ao final, espera-se disponibilizar uma tecnologia com potencial de aplicação em culturas estratégicas para a segurança alimentar nacional, contribuindo para uma agricultura mais eficiente, menos dependente de insumos convencionais e integrada aos princípios da economia circular."
+  },
+  {
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "3223/26",
+   "cnpj": "31.638.886/0001-27",
+   "proponente": "Apoena Biosoluções do Brasil LTDA",
+   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
+   "uf": "SP",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 5042598.46,
+   "valor_solicitado": null,
+   "resumo": "O Brasil representa o maior mercado mundial de herbicidas, porém ainda não possui bioherbicidas registrados comercialmente. As plantas daninhas figuram entre os principais fatores limitantes da produtividade agrícola, devido à elevada capacidade adaptativa e agressividade dessas espécies nos sistemas produtivos. Embora o manejo integrado de plantas daninhas proponha a combinação de diferentes estratégias de controle, o uso de herbicidas químicos permanece predominante. A dependência recorrente de um número limitado de mecanismos de ação tem acelerado a seleção de plantas daninhas resistentes, gerando impactos econômicos, sociais e ambientais associados ao aumento da frequência e da dose de aplicação em campo. Atualmente, espécies resistentes ao glifosato já impactam mais de 15% da área cultivada com soja no Brasil, resultando em custos adicionais relevantes ao produtor.\nNesse contexto, o presente projeto propõe o desenvolvimento de uma nova categoria de bioinsumo para controle de plantas daninhas: um bioherbicida baseado em metabólitos microbianos obtidos por fermentação submersa industrial e formulados em sistema nanoencapsulado biodegradável, visando maior estabilidade, eficiência de aplicação e potencial de translocação sistêmica. Diferentemente dos bioherbicidas disponíveis internacionalmente, majoritariamente baseados em microrganismos vivos e dependentes de condições ambientais específicas, a solução proposta busca maior robustez tecnológica, estabilidade de armazenamento e previsibilidade de desempenho em campo.\nA estratégia tecnológica contempla a prospecção e avaliação de microrganismos provenientes de diferentes biomas brasileiros, incluindo Amazônia, Caatinga e Mata Atlântica, visando identificar produtores de metabólitos com atividade fitotóxica. Será estruturado um banco de dados metabolômico para comparação entre compostos microbianos e aleloquímicos vegetais descritos na literatura com potencial herbicida conhecido, permitindo a seleção racional de metabólitos análogos promissores.\nApós identificação dos compostos candidatos, serão conduzidas etapas de otimização de processo fermentativo em escala laboratorial para definição de meios e condições de cultivo que maximizem a produção do ingrediente ativo. Posteriormente, será realizado o escalonamento produtivo em biorreatores industriais, buscando viabilidade técnica e econômica para produção em escala comercial. O ativo selecionado será incorporado em formulação nanoencapsulada biodegradável desenvolvida em parceria com ICT, com foco em proteção do composto, liberação controlada e aumento de eficiência agronômica.\nCom duração prevista de 36 meses, o projeto visa avançar a tecnologia do nível de maturidade TRL 3 para TRL 7, contemplando as principais etapas necessárias ao desenvolvimento de um produto comercial competitivo, incluindo validação agronômica e geração de base técnica para futuro registro regulatório. Como resultado, espera-se posicionar a Apoena Biotech como empresa pioneira no desenvolvimento de bioherbicidas no Brasil, contribuindo para ampliação do portfólio nacional de bioinsumos e para uma agricultura mais sustentável e resiliente."
+  },
+  {
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "3229/26",
+   "cnpj": "41.989.745/0001-02",
+   "proponente": "Prospecta - Solucoes Biologicas LTDA",
+   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
+   "uf": "RS",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 8848600.0,
+   "valor_solicitado": null,
+   "resumo": "O projeto visa acelerar o desenvolvimento de bioinsumos avançados capazes de aumentar a produtividade agrícola e promover maior sustentabilidade nos sistemas produtivos. A iniciativa aplica ferramentas de genômica, metabolômica e inteligência artificial para integrar metabólitos bioativos com potencial de estimular o crescimento vegetal, aumentar a eficiência de uso de nutrientes e melhorar a tolerância das plantas a condições de estresse ambiental, especialmente déficit hídrico e fitossanitário. A pesquisa será aplicada em gramíneas, com ênfase na cultura do milho, contemplando o aprimoramento de processos fermentativos, o desenvolvimento de formulações biológicas de alta performance e a validação dessas tecnologias na agroindústria. Os resultados esperados incluem novos bioinsumos pleiotrópicos, capazes de aumentar a eficiência agronômica das culturas, reduzir parcialmente a dependência de fertilizantes minerais sintéticos importados e fortalecer a bioindústria agrícola nacional. Ao combinar ciência de ponta, inovação biotecnológica e validação em campo, o projeto contribui para o desenvolvimento de soluções alinhadas à agricultura regenerativa, à segurança alimentar e à competitividade do agronegócio brasileiro."
   },
   {
    "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
@@ -3349,6 +3377,20 @@
   },
   {
    "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5263/26",
+   "cnpj": "12.641.589/0001-96",
+   "proponente": "EKOA AGRO LTDA",
+   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
+   "uf": "GO",
+   "situacao": "Indeferido",
+   "status": "Indeferido",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 7616421.02,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
    "ref": "3005/26",
    "cnpj": "02.914.460/0112-76",
    "proponente": "SEARA ALIMENTOS LTDA",
@@ -3391,20 +3433,6 @@
   },
   {
    "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
-   "ref": "3223/26",
-   "cnpj": "31.638.886/0001-27",
-   "proponente": "Apoena Biosoluções do Brasil LTDA",
-   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
-   "uf": "SP",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 5051418.47,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
    "ref": "3224/26",
    "cnpj": "33.671.093/0001-35",
    "proponente": "AMTEC BIOAGRICOLA LTDA",
@@ -3429,20 +3457,6 @@
    "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 9795008.27,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
-   "ref": "3229/26",
-   "cnpj": "41.989.745/0001-02",
-   "proponente": "Prospecta - Solucoes Biologicas LTDA",
-   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
-   "uf": "RS",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 8848603.96,
    "resumo": null
   },
   {
@@ -3611,20 +3625,6 @@
    "fase": "Habilitação",
    "valor_aprovado": null,
    "valor_solicitado": 10960276.4,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
-   "ref": "5263/26",
-   "cnpj": "12.641.589/0001-96",
-   "proponente": "EKOA AGRO LTDA",
-   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
-   "uf": "GO",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 7616421.02,
    "resumo": null
   },
   {
@@ -9557,7 +9557,7 @@
    "linha": "Linha 1 – Economia Circular",
    "uf": "PR",
    "situacao": "Aprovado",
-   "status": "Em contratação",
+   "status": "Em execução",
    "fase": null,
    "valor_aprovado": 5925904.87,
    "valor_solicitado": null,
@@ -18861,6 +18861,20 @@
   },
   {
    "edital": "Mais Inovação - Saúde / Empresas - 2",
+   "ref": "4739/26",
+   "cnpj": "33.297.582/0001-79",
+   "proponente": "BIO STEM BIOTECNOLOGIA LTDA",
+   "linha": "Linha temática IV - Terapias Avançadas",
+   "uf": "BA",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 5801070.91,
+   "valor_solicitado": null,
+   "resumo": "A síndrome do olho seco, também denominada ceratoconjuntivite seca, é uma condição crônica e multifatorial caracterizada pela perda da estabilidade e da homeostase do filme lacrimal. A doença pode provocar ardor, sensação de corpo estranho, vermelhidão, dor, fotofobia, flutuação da visão e prejuízo às atividades diárias. Embora existam diferentes opções de tratamento, muitos pacientes apresentam resposta insuficiente, necessitam de uso prolongado de medicamentos ou permanecem com controle predominantemente sintomático. Este projeto propõe avançar o desenvolvimento clínico de uma solução oftálmica inovadora contendo vesículas extracelulares derivadas de células-tronco mesenquimais de tecido adiposo humano. As vesículas extracelulares são pequenas partículas naturalmente liberadas pelas células e capazes de transportar proteínas, lipídios e outras moléculas bioativas envolvidas na comunicação celular. Evidências experimentais indicam que essas partículas podem contribuir para a modulação da inflamação, a proteção da superfície ocular e a restauração do equilíbrio do filme lacrimal, oferecendo uma abordagem potencialmente diferenciada para o tratamento da doença. A tecnologia foi estruturada em uma etapa anterior de pesquisa e desenvolvimento conduzida pela BIO STEM em parceria com o Instituto D’Or de Pesquisa e Ensino (IDOR). Nessa fase, foram realizadas atividades de transferência de tecnologia, estabelecimento e caracterização de banco mestre de células, validação do processo de fabricação, implantação de controles de qualidade, avaliação de estabilidade e preparação de lotes-piloto e da documentação regulatória. A nova etapa concentrará esforços na avaliação do produto em seres humanos. Será realizado um ensaio clínico de Fase I/IIa, randomizado, duplo-cego, controlado por placebo e com escalonamento de dose, envolvendo adultos com ceratoconjuntivite seca leve a moderada. O estudo avaliará a segurança local e sistêmica, a tolerabilidade e os sinais preliminares de eficácia da solução oftálmica. Serão acompanhados eventos adversos e parâmetros clínicos relacionados aos sintomas, à integridade da córnea e da conjuntiva, à produção de lágrimas e à estabilidade do filme lacrimal, por meio de avaliações como coloração da superfície ocular, questionário OSDI, teste de Schirmer e tempo de ruptura do filme lacrimal. Os participantes serão acompanhados durante o período de tratamento e nas visitas clínicas previstas no protocolo. Espera-se identificar uma faixa de dose segura e potencialmente ativa, gerar evidências para orientar as próximas etapas do desenvolvimento e produzir documentação técnico-regulatória para a continuidade do programa clínico e o futuro registro sanitário. Além do potencial benefício aos pacientes, o projeto contribuirá para consolidar no Brasil uma plataforma biotecnológica de alto valor agregado, fortalecer a integração entre empresa e instituição científica e ampliar a capacidade nacional de desenvolver e avaliar terapias oftálmicas inovadoras."
+  },
+  {
+   "edital": "Mais Inovação - Saúde / Empresas - 2",
    "ref": "0455/26",
    "cnpj": "40.107.462/0001-27",
    "proponente": "Nintx Pesquisa e Desenvolvimento Ltda.",
@@ -22347,20 +22361,6 @@
   },
   {
    "edital": "Mais Inovação - Saúde / Empresas - 2",
-   "ref": "4739/26",
-   "cnpj": "33.297.582/0001-79",
-   "proponente": "BIO STEM BIOTECNOLOGIA LTDA",
-   "linha": "Linha temática IV - Terapias Avançadas",
-   "uf": "BA",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 5831410.87,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Saúde / Empresas - 2",
    "ref": "4743/26",
    "cnpj": "55.382.602/0001-42",
    "proponente": "ELIANE TURATO CONSULTORIA E PLANEJAMENTO EMPRESARIAL LTDA",
@@ -23621,6 +23621,20 @@
   },
   {
    "edital": "Mais Inovação - Tecnologias Digitais - 2",
+   "ref": "3056/26",
+   "cnpj": "59.104.422/0001-50",
+   "proponente": "VOLKSWAGEN DO BRASIL INDUSTRIA DE VEICULOS AUTOMOTORES LTDA",
+   "linha": "Linha Temática 1 - Desenvolvimento da Pilha de Inteligência Artificial Nacional",
+   "uf": "SP",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 5000000.0,
+   "valor_solicitado": null,
+   "resumo": "O projeto tem como objetivo o desenvolvimento de uma plataforma de inteligência artificial voltada à simulação e validação de sistemas avançados de assistência ao motorista (ADAS).\nComo resultado, espera-se fortalecer o desenvolvimento de tecnologias digitais no setor automotivo, com impactos positivos na mobilidade, na redução de acidentes e na difusão de soluções inovadoras baseadas em inteligência artificial."
+  },
+  {
+   "edital": "Mais Inovação - Tecnologias Digitais - 2",
    "ref": "3060/26",
    "cnpj": "28.491.873/0001-63",
    "proponente": "INOVIA PESQUISA APLICADA E DESENVOLVIMENTO EM INTELIGENCIA ARTIFICIAL LTDA",
@@ -23655,7 +23669,7 @@
    "linha": "Linha Temática 6 - Modelos de IA Generativa",
    "uf": "SP",
    "situacao": "Aprovado",
-   "status": "Em contratação",
+   "status": "Em execução",
    "fase": null,
    "valor_aprovado": 5118105.64,
    "valor_solicitado": null,
@@ -25017,20 +25031,6 @@
    "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 5015397.96,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Tecnologias Digitais - 2",
-   "ref": "3056/26",
-   "cnpj": "59.104.422/0001-50",
-   "proponente": "VOLKSWAGEN DO BRASIL INDUSTRIA DE VEICULOS AUTOMOTORES LTDA",
-   "linha": "Linha Temática 1 - Desenvolvimento da Pilha de Inteligência Artificial Nacional",
-   "uf": "SP",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 5000000.0,
    "resumo": null
   },
   {
@@ -34989,6 +34989,20 @@
   },
   {
    "edital": "Mais Inovação - Transformação Mineral - 2",
+   "ref": "3119/26",
+   "cnpj": "09.811.654/0001-70",
+   "proponente": "Acumuladores Moura S/A",
+   "linha": "Linha 2 – Mineração Urbana",
+   "uf": "PE",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 17692340.61,
+   "valor_solicitado": null,
+   "resumo": "O projeto \"Desenvolvimento Integrado de Rotas Metalúrgicas Inovadoras para Recuperação Avançada de Estanho, Chumbo e Coprodutos Minerais a partir de Baterias Inservíveis\" tem como objetivo desenvolver e validar uma solução tecnológica integrada de mineração urbana voltada à recuperação eficiente de metais estratégicos e à valorização de coprodutos minerais provenientes da reciclagem de baterias chumbo-ácido inservíveis.\n\nA proposta busca superar desafios tecnológicos associados aos processos convencionais de reciclagem, nos quais parte significativa dos metais presentes nas baterias é perdida em escórias e outras correntes do processo, reduzindo o aproveitamento dos recursos minerais contidos nesses resíduos. Atualmente, a reciclagem por fornos rotativos gera elevadas quantidades de escória, contendo ferro, enxofre, chumbo, estanho e outros elementos de valor econômico, que acabam sendo destinados a aterros industriais por se tratarem de resíduos classificados como perigosos.\n\nPara enfrentar esse desafio, o projeto propõe o desenvolvimento e a integração de tecnologias avançadas de processamento metalúrgico, incluindo o forno de sopro lateral enriquecido com oxigênio (OSBF – Oxygen-Enriched Side-Blown Furnace), processamento em baixa temperatura e destilação a vácuo (VDU – Vacuum Distillation Unit). A combinação dessas tecnologias permitirá investigar e validar novas rotas para aumentar a recuperação de chumbo e estanho, reduzir perdas metálicas para escórias e poeiras, melhorar a eficiência dos processos de separação e refino e ampliar o aproveitamento dos recursos minerais presentes nas baterias inservíveis.\n\nAlém da recuperação de metais estratégicos, o projeto contempla o desenvolvimento de soluções para aproveitamento integral dos coprodutos gerados no processo. Entre os principais resultados esperados estão a obtenção de escória vitrificada com potencial aplicação em setores como construção civil, pavimentação e indústria cimenteira, bem como a recuperação de ácido sulfúrico a partir dos gases gerados durante o processamento metalúrgico. Essas iniciativas contribuirão para a redução de passivos ambientais, diminuição da disposição de resíduos em aterros industriais e ampliação da circularidade dos materiais utilizados na cadeia produtiva.\n\nAs atividades de pesquisa e desenvolvimento envolverão modelagem termodinâmica, estudos de balanço de massa e energia, caracterização físico-química de matérias-primas, produtos intermediários e coprodutos, validação de parâmetros operacionais, desenvolvimento de metodologias de recuperação de metais e qualificação tecnológica das novas rotas de aproveitamento mineral. O projeto também contribuirá para a absorção e internalização de conhecimentos avançados em metalurgia secundária, fortalecendo competências nacionais em tecnologias de reciclagem e transformação mineral.\n\nComo resultado, espera-se desenvolver uma solução inovadora capaz de aumentar a eficiência da recuperação de metais estratégicos, reduzir a geração de resíduos perigosos, transformar passivos ambientais em novas fontes de valor econômico e fortalecer a mineração urbana como alternativa sustentável para o suprimento de matérias-primas críticas no Brasil."
+  },
+  {
+   "edital": "Mais Inovação - Transformação Mineral - 2",
    "ref": "3598/26",
    "cnpj": "10.492.473/0001-07",
    "proponente": "BIOSYS GESTÃO EM MEIO AMBIENTE LTDA",
@@ -35531,20 +35545,6 @@
    "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 8492430.0,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transformação Mineral - 2",
-   "ref": "3119/26",
-   "cnpj": "09.811.654/0001-70",
-   "proponente": "Acumuladores Moura S/A",
-   "linha": "Linha 2 – Mineração Urbana",
-   "uf": "PE",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 18605083.37,
    "resumo": null
   },
   {
@@ -37057,6 +37057,20 @@
    "fase": "Habilitação",
    "valor_aprovado": null,
    "valor_solicitado": 14893916.37,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transformação Mineral - 2",
+   "ref": "#2390167",
+   "cnpj": "11.026.633/0001-95",
+   "proponente": "HEK Technologies",
+   "linha": "Linha 1 – Minerais e Materiais Críticos e Estratégicos para Transição Energética e Descarbonização",
+   "uf": "MG",
+   "situacao": "Em análise",
+   "status": "Enviado",
+   "fase": "Habilitação",
+   "valor_aprovado": null,
+   "valor_solicitado": 5654200.0,
    "resumo": null
   },
   {
@@ -38993,6 +39007,20 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4240/26",
+   "cnpj": "31.958.399/0001-41",
+   "proponente": "IBBX INOVACAO EM SISTEMAS DE SOFTWARE E HARDWARE LTDA.",
+   "linha": "Linha 1: Geração de eletricidade a partir de fontes de baixo carbono",
+   "uf": "SP",
+   "situacao": "Indeferido",
+   "status": "Indeferido",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 11288909.52,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "4241/26",
    "cnpj": "33.230.005/0001-60",
    "proponente": "CPL Engenharia Ltda",
@@ -39077,6 +39105,20 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4256/26",
+   "cnpj": "33.664.228/0001-35",
+   "proponente": "USINA BARRALCOOL S/A",
+   "linha": "Linha 6: Processos e componentes para a produção de Combustíveis Sustentáveis",
+   "uf": "MT",
+   "situacao": "Indeferido",
+   "status": "Indeferido",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 14999991.91,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "4257/26",
    "cnpj": "09.579.403/0001-01",
    "proponente": "Akimat Tecnologia Ltda.",
@@ -39087,6 +39129,20 @@
    "fase": null,
    "valor_aprovado": null,
    "valor_solicitado": 5228930.0,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4260/26",
+   "cnpj": "19.410.735/0001-11",
+   "proponente": "Mobilis veículos elétricos LTDA",
+   "linha": "Linha 6: Processos e componentes para a produção de Combustíveis Sustentáveis",
+   "uf": "SC",
+   "situacao": "Indeferido",
+   "status": "Indeferido",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 14737009.14,
    "resumo": null
   },
   {
@@ -40435,20 +40491,6 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
-   "ref": "4240/26",
-   "cnpj": "31.958.399/0001-41",
-   "proponente": "IBBX INOVACAO EM SISTEMAS DE SOFTWARE E HARDWARE LTDA.",
-   "linha": "Linha 1: Geração de eletricidade a partir de fontes de baixo carbono",
-   "uf": "SP",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 11288909.52,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "4242/26",
    "cnpj": "45.236.599/0001-03",
    "proponente": "INEDITA BIO LTDA",
@@ -40575,20 +40617,6 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
-   "ref": "4256/26",
-   "cnpj": "33.664.228/0001-35",
-   "proponente": "USINA BARRALCOOL S/A",
-   "linha": "Linha 6: Processos e componentes para a produção de Combustíveis Sustentáveis",
-   "uf": "MT",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 14999991.91,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "4258/26",
    "cnpj": "05.524.572/0001-93",
    "proponente": "ICONIC LUBRIFICANTES S.A.",
@@ -40596,7 +40624,7 @@
    "uf": "RJ",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 5618401.63,
    "resumo": null
@@ -40613,20 +40641,6 @@
    "fase": "Habilitação",
    "valor_aprovado": null,
    "valor_solicitado": 19855297.32,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transição Energética - 2",
-   "ref": "4260/26",
-   "cnpj": "19.410.735/0001-11",
-   "proponente": "Mobilis veículos elétricos LTDA",
-   "linha": "Linha 6: Processos e componentes para a produção de Combustíveis Sustentáveis",
-   "uf": "SC",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 14737009.14,
    "resumo": null
   },
   {
@@ -41016,7 +41030,7 @@
    "uf": "RS",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 44823733.84,
    "resumo": null
@@ -42898,5 +42912,5 @@
    "resumo": null
   }
  ],
- "coletado_em": "2026-11-13 08:23"
+ "coletado_em": "2026-11-13 23:32"
 }

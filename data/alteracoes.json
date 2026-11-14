@@ -1,6 +1,12 @@
 {
  "execucoes": [
   {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "alteracoes": 16,
+   "carga_inicial": false
+  },
+  {
    "data": "2026-11-13 08:23",
    "painel": "2026-11-11",
    "alteracoes": 1041,
@@ -14,6 +20,182 @@
   }
  ],
  "eventos": [
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Transformação Mineral - 2",
+   "ref": "#2390167",
+   "cnpj": "11.026.633/0001-95",
+   "proponente": "HEK Technologies",
+   "tipo": "Incluída no painel",
+   "de": null,
+   "para": "Em análise (Habilitação)"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Base Industrial de Defesa - 2",
+   "ref": "3988/26",
+   "cnpj": "04.602.789/0001-01",
+   "proponente": "Daten Tecnologia Ltda.",
+   "tipo": "Mudança de status",
+   "de": "Em contratação",
+   "para": "Em execução"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "2999/26",
+   "cnpj": "05.879.626/0001-33",
+   "proponente": "HILE INDUSTRIA DE ALIMENTOS LTDA",
+   "tipo": "Mudança de status",
+   "de": "Em contratação",
+   "para": "Em execução"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "3223/26",
+   "cnpj": "31.638.886/0001-27",
+   "proponente": "Apoena Biosoluções do Brasil LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 5042598.46"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "3229/26",
+   "cnpj": "41.989.745/0001-02",
+   "proponente": "Prospecta - Solucoes Biologicas LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 8848600.00"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5263/26",
+   "cnpj": "12.641.589/0001-96",
+   "proponente": "EKOA AGRO LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
+   "ref": "2545/26",
+   "cnpj": "15.126.252/0001-39",
+   "proponente": "Cencoderma Instituicao de Pesquisa e Desenvolvimento de Cosmeticos LTDA",
+   "tipo": "Mudança de status",
+   "de": "Em contratação",
+   "para": "Em execução"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Saúde / Empresas - 2",
+   "ref": "4739/26",
+   "cnpj": "33.297.582/0001-79",
+   "proponente": "BIO STEM BIOTECNOLOGIA LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 5801070.91"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Tecnologias Digitais - 2",
+   "ref": "3067/26",
+   "cnpj": "38.217.648/0001-97",
+   "proponente": "INDIGO HIVE CONSULTORIA EM TECNOLOGIA DA INFORMACAO S.A.",
+   "tipo": "Mudança de status",
+   "de": "Em contratação",
+   "para": "Em execução"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Tecnologias Digitais - 2",
+   "ref": "3056/26",
+   "cnpj": "59.104.422/0001-50",
+   "proponente": "VOLKSWAGEN DO BRASIL INDUSTRIA DE VEICULOS AUTOMOTORES LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 5000000.00"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Transformação Mineral - 2",
+   "ref": "3119/26",
+   "cnpj": "09.811.654/0001-70",
+   "proponente": "Acumuladores Moura S/A",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 17692340.61"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4240/26",
+   "cnpj": "31.958.399/0001-41",
+   "proponente": "IBBX INOVACAO EM SISTEMAS DE SOFTWARE E HARDWARE LTDA.",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4256/26",
+   "cnpj": "33.664.228/0001-35",
+   "proponente": "USINA BARRALCOOL S/A",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4258/26",
+   "cnpj": "05.524.572/0001-93",
+   "proponente": "ICONIC LUBRIFICANTES S.A.",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4260/26",
+   "cnpj": "19.410.735/0001-11",
+   "proponente": "Mobilis veículos elétricos LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-13 23:32",
+   "painel": "2026-11-12",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4353/26",
+   "cnpj": "89.425.664/0001-06",
+   "proponente": "Sandero Indústria e Comércio de Produtos Químicos LTDA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
   {
    "data": "2026-11-13 08:23",
    "painel": "2026-11-11",
