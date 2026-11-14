@@ -1,5 +1,5 @@
 {
- "painel_atualizado_em": "2026-11-12",
+ "painel_atualizado_em": "2026-11-13",
  "editais": {
   "Cooperamais Brasil - Empresas": {
    "titulo": "Finep Cooperamais Brasil Tecnologias – Empresas",
@@ -3552,7 +3552,7 @@
    "uf": "MT",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 7000000.0,
    "resumo": null
@@ -40638,7 +40638,7 @@
    "uf": "GO",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 19855297.32,
    "resumo": null
@@ -42912,5 +42912,5 @@
    "resumo": null
   }
  ],
- "coletado_em": "2026-11-13 23:32"
+ "coletado_em": "2026-11-14 13:37"
 }

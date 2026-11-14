@@ -1,6 +1,12 @@
 {
  "execucoes": [
   {
+   "data": "2026-11-14 13:37",
+   "painel": "2026-11-13",
+   "alteracoes": 2,
+   "carga_inicial": false
+  },
+  {
    "data": "2026-11-13 23:32",
    "painel": "2026-11-12",
    "alteracoes": 16,
@@ -20,6 +26,28 @@
   }
  ],
  "eventos": [
+  {
+   "data": "2026-11-14 13:37",
+   "painel": "2026-11-13",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5256/26",
+   "cnpj": "08.400.893/0001-74",
+   "proponente": "RAWELL QUIMICA LTDA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-14 13:37",
+   "painel": "2026-11-13",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4259/26",
+   "cnpj": "03.471.344/0001-77",
+   "proponente": "CAOA MONTADORA DE VEICULOS LTDA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
   {
    "data": "2026-11-13 23:32",
    "painel": "2026-11-12",
