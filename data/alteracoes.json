@@ -1,6 +1,12 @@
 {
  "execucoes": [
   {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "alteracoes": 17,
+   "carga_inicial": false
+  },
+  {
    "data": "2026-11-15 14:14",
    "painel": "2026-11-14",
    "alteracoes": 0,
@@ -32,6 +38,193 @@
   }
  ],
  "eventos": [
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5255/26",
+   "cnpj": "02.635.522/0001-95",
+   "proponente": "Jalles Machado S/A",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5260/26",
+   "cnpj": "06.308.974/0001-13",
+   "proponente": "Marasuco Indústria de Sucos Ltda",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5264/26",
+   "cnpj": "62.113.286/0001-79",
+   "proponente": "VIVATERRA VENTURES E PARTICIPAÇÕES LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5265/26",
+   "cnpj": "01.496.552/0001-03",
+   "proponente": "BVL VIDA FERTILIZANTES LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5269/26",
+   "cnpj": "35.671.986/0001-06",
+   "proponente": "Neosilos Desenvolvimento de Sistemas Ltda.",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5272/26",
+   "cnpj": "15.009.178/0001-70",
+   "proponente": "USINAS ITAMARATI S/A",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5273/26",
+   "cnpj": "07.243.002/0002-31",
+   "proponente": "Amazônia Mucajaí Mineração Ltda",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5274/26",
+   "cnpj": "26.837.454/0001-05",
+   "proponente": "MMC PROTETORES DE CAUDAS LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5285/26",
+   "cnpj": "44.666.371/0001-82",
+   "proponente": "Camílio Empreendimentos Ltda",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
+   "ref": "2593/26",
+   "cnpj": "32.070.658/0001-66",
+   "proponente": "Maramar Aquacultura Comercio Importação Exportação Ltda",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Reprovado"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "1773/26",
+   "cnpj": "30.084.190/0001-33",
+   "proponente": "HION Soluções e Tecnologia LTDA",
+   "tipo": "Mudança de status",
+   "de": "Em contratação",
+   "para": "Em execução"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4067/26",
+   "cnpj": "61.151.559/0001-07",
+   "proponente": "REMOTIA SERVIÇOS LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Reprovado",
+   "para": "Em análise"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "3716/26",
+   "cnpj": "29.264.299/0001-73",
+   "proponente": "GRUNNER TECNOLOGIA AGRICOLA LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4398/26",
+   "cnpj": "24.039.793/0001-10",
+   "proponente": "EPER ENGENHARIA E ENERGIAS LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4440/26",
+   "cnpj": "19.879.775/0001-07",
+   "proponente": "MORADIA LEGAL & GEOSMART FISCAL GOVTECH CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4561/26",
+   "cnpj": "07.908.938/0001-53",
+   "proponente": "BEIRA RIO AGRONEGOCIOS LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-16 17:31",
+   "painel": "2026-11-14",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4565/26",
+   "cnpj": "12.482.805/0001-06",
+   "proponente": "Shineray do Brasil LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
   {
    "data": "2026-11-14 13:37",
    "painel": "2026-11-13",
