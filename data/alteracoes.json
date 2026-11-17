@@ -1,6 +1,12 @@
 {
  "execucoes": [
   {
+   "data": "2026-11-17 16:12",
+   "painel": "2026-11-16",
+   "alteracoes": 6,
+   "carga_inicial": false
+  },
+  {
    "data": "2026-11-17 01:39",
    "painel": "2026-11-15",
    "alteracoes": 2,
@@ -44,6 +50,72 @@
   }
  ],
  "eventos": [
+  {
+   "data": "2026-11-17 16:12",
+   "painel": "2026-11-16",
+   "edital": "Cooperamais Brasil - Empresas",
+   "ref": "#2363345",
+   "cnpj": "22.173.881/0001-85",
+   "proponente": "CENGECT CENTRO TECNOLÓGICO LTDA",
+   "tipo": "Proposta retirada do painel",
+   "de": "Em análise (Habilitação)",
+   "para": null
+  },
+  {
+   "data": "2026-11-17 16:12",
+   "painel": "2026-11-16",
+   "edital": "Cooperamais Brasil - Empresas",
+   "ref": "#2380270",
+   "cnpj": "63.719.256/0001-73",
+   "proponente": "MARCIO MOTA DA CUNHA LTDA",
+   "tipo": "Proposta retirada do painel",
+   "de": "Em análise (Habilitação)",
+   "para": null
+  },
+  {
+   "data": "2026-11-17 16:12",
+   "painel": "2026-11-16",
+   "edital": "Cooperamais Brasil - Empresas",
+   "ref": "#2383227",
+   "cnpj": "17.260.295/0001-38",
+   "proponente": "Tecnofrutt Máquinas e Implementos Agrícolas Ltda",
+   "tipo": "Proposta retirada do painel",
+   "de": "Em análise (Habilitação)",
+   "para": null
+  },
+  {
+   "data": "2026-11-17 16:12",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "#2200081",
+   "cnpj": "04.718.687/0001-56",
+   "proponente": "ANTONELLY CONSTRUÇÕES E SERVIÇOS LTDA.",
+   "tipo": "Proposta retirada do painel",
+   "de": "Em análise (Habilitação)",
+   "para": null
+  },
+  {
+   "data": "2026-11-17 16:12",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5283/26",
+   "cnpj": "35.671.986/0001-06",
+   "proponente": "Neosilos Desenvolvimento de Sistemas Ltda.",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-17 16:12",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4331/26",
+   "cnpj": "51.932.124/0001-46",
+   "proponente": "SL RESIDUO E ENERGIA LTDA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
   {
    "data": "2026-11-17 01:39",
    "painel": "2026-11-15",

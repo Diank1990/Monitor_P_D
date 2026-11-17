@@ -1,5 +1,5 @@
 {
- "painel_atualizado_em": "2026-11-15",
+ "painel_atualizado_em": "2026-11-16",
  "editais": {
   "Cooperamais Brasil - Empresas": {
    "titulo": "Finep Cooperamais Brasil Tecnologias – Empresas",
@@ -83,48 +83,6 @@
    "fase": "Habilitação",
    "valor_aprovado": null,
    "valor_solicitado": 11130600.0,
-   "resumo": null
-  },
-  {
-   "edital": "Cooperamais Brasil - Empresas",
-   "ref": "#2363345",
-   "cnpj": "22.173.881/0001-85",
-   "proponente": "CENGECT CENTRO TECNOLÓGICO LTDA",
-   "linha": "Desenvolvimento de Trator de pequeno porte, implementos agrícolas compatíveis e nacionalização de peças e sistemas",
-   "uf": "RS",
-   "situacao": "Em análise",
-   "status": "Enviado",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 6665000.0,
-   "resumo": null
-  },
-  {
-   "edital": "Cooperamais Brasil - Empresas",
-   "ref": "#2380270",
-   "cnpj": "63.719.256/0001-73",
-   "proponente": "MARCIO MOTA DA CUNHA LTDA",
-   "linha": "Desenvolvimento de sistemas de processamento e beneficiamento de produtos agrícolas",
-   "uf": "AM",
-   "situacao": "Em análise",
-   "status": "Enviado",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 9236287.43,
-   "resumo": null
-  },
-  {
-   "edital": "Cooperamais Brasil - Empresas",
-   "ref": "#2383227",
-   "cnpj": "17.260.295/0001-38",
-   "proponente": "Tecnofrutt Máquinas e Implementos Agrícolas Ltda",
-   "linha": "Desenvolvimento de Trator de pequeno porte, implementos agrícolas compatíveis e nacionalização de peças e sistemas",
-   "uf": "RS",
-   "situacao": "Em análise",
-   "status": "Enviado",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 8261829.04,
    "resumo": null
   },
   {
@@ -3874,7 +3832,7 @@
    "uf": "MT",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 5923140.0,
    "resumo": null
@@ -18059,20 +18017,6 @@
    "fase": "Habilitação",
    "valor_aprovado": null,
    "valor_solicitado": 9317189.69,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
-   "ref": "#2200081",
-   "cnpj": "04.718.687/0001-56",
-   "proponente": "ANTONELLY CONSTRUÇÕES E SERVIÇOS LTDA.",
-   "linha": "Linha 2: Mobilidade Aquaviária",
-   "uf": "AM",
-   "situacao": "Em análise",
-   "status": "Enviado",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 19193833.18,
    "resumo": null
   },
   {
@@ -40820,7 +40764,7 @@
    "uf": "RS",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 9236800.0,
    "resumo": null
@@ -42912,5 +42856,5 @@
    "resumo": null
   }
  ],
- "coletado_em": "2026-11-17 01:39"
+ "coletado_em": "2026-11-17 16:12"
 }
