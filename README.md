@@ -4,7 +4,7 @@ Coleta diariamente o painel público da FINEP, compara com a coleta anterior, re
 
 ## O que fica registrado
 
-- `index.html`: a página, com seletor de seleção pública, abas Aprovados / Não aprovados / Em análise / Por linha e UF / Reserva regional / Simulação / Alterações, busca e exportação em CSV.
+- `index.html`: a página, com seletor de seleção pública, abas Aprovados / Não aprovados / Em análise / Por linha e UF / Reserva regional / Simulação / Alterações / Histórico, busca e exportação em CSV. A aba Alterações mostra apenas as mudanças do dia da coleta mais recente em relação à versão anterior; as mais antigas ficam na aba Histórico, com filtro por dia.
 - `data/atual.json`: a versão mais recente dos dados.
 - `data/alteracoes.json`: o registro de alterações (propostas incluídas no painel, mudança de situação, de status, de fase, de valor, número de referência atribuído, propostas retiradas do painel, novos editais, mudança de orçamento).
 - `data/historico.json`: os indicadores de cada edital a cada coleta com alteração.
