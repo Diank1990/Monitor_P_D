@@ -1,6 +1,12 @@
 {
  "execucoes": [
   {
+   "data": "2026-11-17 01:39",
+   "painel": "2026-11-15",
+   "alteracoes": 2,
+   "carga_inicial": false
+  },
+  {
    "data": "2026-11-16 17:31",
    "painel": "2026-11-14",
    "alteracoes": 17,
@@ -38,6 +44,28 @@
   }
  ],
  "eventos": [
+  {
+   "data": "2026-11-17 01:39",
+   "painel": "2026-11-15",
+   "edital": "Cooperamais Brasil - Empresas",
+   "ref": "5246/26",
+   "cnpj": "29.913.328/0001-80",
+   "proponente": "yak tractors comercio e servicos ltda",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-17 01:39",
+   "painel": "2026-11-15",
+   "edital": "Cooperamais Brasil - Empresas",
+   "ref": "5247/26",
+   "cnpj": "30.669.815/0001-29",
+   "proponente": "LIVEFARM TECNOLOGIA AGROPECUARIA LTDA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
   {
    "data": "2026-11-16 17:31",
    "painel": "2026-11-14",
