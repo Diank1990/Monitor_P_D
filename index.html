@@ -145,6 +145,7 @@ footer p{margin:4px 0;max-width:110ch}
   <div class="ferramentas">
     <input type="search" id="busca" placeholder="Buscar por proponente, CNPJ, referência, UF ou linha temática" aria-label="Buscar">
     <select id="tipo" aria-label="Tipo de alteração" hidden></select>
+    <select id="dia" aria-label="Dia da coleta" hidden></select>
     <button id="exportar" type="button">Exportar CSV</button>
   </div>
   <p class="contagem" id="contagem"></p>
@@ -157,7 +158,7 @@ footer p{margin:4px 0;max-width:110ch}
     <p><b>Indeferido:</b> não aprovado na Etapa 1 (Habilitação). <b>Reprovado:</b> não aprovado na Etapa 2 (Análise de Mérito).</p>
     <p><b>Em análise:</b> propostas ainda sem resultado final nas Etapas 1 ou 2, inclusive as indeferidas que estão no prazo de recurso ou com recurso em análise pela FINEP.</p>
     <p>Referências iniciadas por “#” são identificadores provisórios de propostas que ainda não receberam número de referência.</p>
-    <p>Linhas destacadas mudaram na coleta mais recente. Fonte: <a id="fonte" href="#" target="_blank" rel="noopener">painel público da FINEP</a>.</p>
+    <p>Linhas destacadas correspondem às alterações da aba Alterações. Fonte: <a id="fonte" href="#" target="_blank" rel="noopener">painel público da FINEP</a>.</p>
   </footer>
 </div>
 
@@ -170,6 +171,13 @@ const EVENTOS = (DADOS.alteracoes && DADOS.alteracoes.eventos) || [];
 const EXEC = (DADOS.alteracoes && DADOS.alteracoes.execucoes) || [];
 const HIST = DADOS.historico || [];
 const ultima = EXEC[0];
+// Aba Alterações: só o dia da coleta mais recente, comparado com a versão anterior. O restante vai para o Histórico.
+const diaDe = s => String(s || "").slice(0, 10);
+const DIA_ATUAL = ultima ? diaDe(ultima.data) : null;
+const EXEC_ATUAIS = EXEC.filter(x => diaDe(x.data) === DIA_ATUAL);
+const EXEC_BASE = EXEC.find(x => diaDe(x.data) !== DIA_ATUAL);
+const EV_ATUAIS = EVENTOS.filter(e => diaDe(e.data) === DIA_ATUAL);
+const EV_HIST = EVENTOS.filter(e => diaDe(e.data) !== DIA_ATUAL);
 
 const brl = new Intl.NumberFormat("pt-BR", {style:"currency", currency:"BRL"});
 const inteiro = new Intl.NumberFormat("pt-BR");
@@ -232,11 +240,10 @@ function situacaoBase(b) {
 }
 
 const marcas = new Map();
-if (ultima && !ultima.carga_inicial)
-  for (const e of EVENTOS) if (e.data === ultima.data && e.ref)
+for (const e of EV_ATUAIS) if (e.ref)
     marcas.set(e.edital + "|" + e.ref, e.tipo === "Incluída no painel" ? "nova" : "alterada");
 
-const estado = {edital:"", aba:"aprovados", busca:"", tipo:"", ordem:null,
+const estado = {edital:"", aba:"aprovados", busca:"", tipo:"", dia:"", ordem:null,
   sim:{alvo:null, merito:null, hab:null, reserva:true, excl:new Set(), filaAberta:null}};
 
 const ABAS = [
@@ -246,7 +253,8 @@ const ABAS = [
   {id:"distribuicao", nome:"Por linha e UF", analitica:true},
   {id:"reserva", nome:"Reserva regional", analitica:true},
   {id:"simulacao", nome:"Simulação", analitica:true},
-  {id:"alteracoes", nome:"Alterações"}
+  {id:"alteracoes", nome:"Alterações"},
+  {id:"historico", nome:"Histórico"}
 ];
 
 const COL_EDITAL = {k:"edital", t:"Seleção pública"};
@@ -260,9 +268,11 @@ const COLUNAS = {
   alteracoes:[{k:"data",t:"Coleta"},{k:"ref",t:"Ref."},{k:"proponente",t:"Proponente"},{k:"tipo",t:"Alteração"},
               {k:"de",t:"Antes"},{k:"para",t:"Depois"}]
 };
+COLUNAS.historico = COLUNAS.alteracoes;
 
 const $ = id => document.getElementById(id);
 const analitica = () => !!(ABAS.find(a => a.id === estado.aba) || {}).analitica;
+const ehEventos = () => estado.aba === "alteracoes" || estado.aba === "historico";
 const doEdital = arr => estado.edital ? arr.filter(x => x.edital === estado.edital) : arr;
 const texto = x => Object.values(x).join(" ").toLowerCase() + " " + String(x.cnpj || "").replace(/\D/g, "");
 const comparar = (a, b) => {
@@ -272,9 +282,10 @@ const comparar = (a, b) => {
 const valorEvento = v => typeof v === "number" ? brl.format(v) : (v == null ? "—" : String(v).replace(/valor aprovado (\d+\.\d+)/, (m, n) => "valor aprovado " + brl.format(+n)));
 
 function linhas() {
-  if (estado.aba === "alteracoes") {
-    let r = doEdital(EVENTOS);
+  if (ehEventos()) {
+    let r = doEdital(estado.aba === "alteracoes" ? EV_ATUAIS : EV_HIST);
     if (estado.tipo) r = r.filter(e => e.tipo === estado.tipo);
+    if (estado.aba === "historico" && estado.dia) r = r.filter(e => diaDe(e.data) === estado.dia);
     return r;
   }
   return doEdital(P.filter(ABAS.find(a => a.id === estado.aba).filtro));
@@ -285,7 +296,7 @@ function filtradas() {
   if (estado.ordem) {
     const {k, dir} = estado.ordem;
     r = [...r].sort((a, b) => dir * comparar(a[k], b[k]));
-  } else if (estado.aba !== "alteracoes") {
+  } else if (!ehEventos()) {
     r = [...r].sort((a, b) => comparar(a.edital, b.edital) || comparar(a.ref, b.ref));
   }
   return r;
@@ -319,14 +330,14 @@ function desenharOrcamento() {
 
 function desenharAbas() {
   $("abas").innerHTML = ABAS.map(a => {
-    const n = a.analitica ? null : a.id === "alteracoes" ? doEdital(EVENTOS).length : doEdital(P.filter(a.filtro)).length;
+    const n = a.analitica || a.id === "historico" ? null : a.id === "alteracoes" ? doEdital(EV_ATUAIS).length : doEdital(P.filter(a.filtro)).length;
     return `<button role="tab" data-aba="${a.id}" aria-selected="${a.id === estado.aba}">${a.nome}${n == null ? "" : `<span class="n">${inteiro.format(n)}</span>`}</button>`;
   }).join("");
 }
 
 function celula(c, x) {
   const v = x[c.k];
-  if (estado.aba === "alteracoes") {
+  if (ehEventos()) {
     if (c.k === "data") return `<td class="nw">${esc(dataBR(v))}</td>`;
     if (c.k === "de") return `<td class="de">${esc(valorEvento(v))}</td>`;
     if (c.k === "para") return `<td>${esc(valorEvento(v))}</td>`;
@@ -349,13 +360,16 @@ function desenharTabela() {
   const cab = cols.map(c => `<th scope="col" data-k="${c.k}" class="${c.num ? "num" : ""}" ${estado.ordem && estado.ordem.k === c.k ? `aria-sort="${estado.ordem.dir > 0 ? "ascending" : "descending"}"` : ""}>${c.t}</th>`).join("");
   let corpo;
   if (!rs.length) {
-    const msg = estado.aba === "alteracoes" && !EVENTOS.length
-      ? "Nenhuma alteração registrada ainda. A primeira comparação acontece na próxima coleta em que o painel da FINEP mudar."
+    const msg = estado.busca ? "Nenhum registro corresponde à busca. Limpe o campo de busca ou escolha outra seleção pública."
+      : estado.aba === "alteracoes" ? (EXEC_BASE
+          ? `Nenhuma alteração em propostas${estado.edital ? " desta seleção pública" : ""} foi registrada em ${dataBR(DIA_ATUAL)}. As alterações anteriores estão na aba Histórico.`
+          : "Nenhuma alteração registrada ainda. A primeira comparação acontece na próxima coleta em que o painel da FINEP mudar.")
+      : estado.aba === "historico" ? `Não há alterações registradas antes de ${dataBR(DIA_ATUAL)}${estado.edital ? " nesta seleção pública" : ""}.`
       : "Nenhum registro corresponde à busca. Limpe o campo de busca ou escolha outra seleção pública.";
     corpo = `<tr><td class="vazio" colspan="${cols.length}">${msg}</td></tr>`;
   } else {
     corpo = rs.map(x => {
-      const m = estado.aba !== "alteracoes" && marcas.has(chave(x));
+      const m = !ehEventos() && marcas.has(chave(x));
       let tr = `<tr class="${m ? "marcada" : ""}">${cols.map(c => celula(c, x)).join("")}</tr>`;
       if (x.resumo) tr += `<tr class="resumo" hidden><td colspan="${cols.length}">${esc(x.resumo)}</td></tr>`;
       return tr;
@@ -363,13 +377,22 @@ function desenharTabela() {
   }
   $("tabela").innerHTML = `<thead><tr>${cab}</tr></thead><tbody>${corpo}</tbody>`;
   const total = linhas().length;
-  $("contagem").textContent = rs.length === total
+  let txt = rs.length === total
     ? `${inteiro.format(total)} registro${total === 1 ? "" : "s"}`
     : `${inteiro.format(rs.length)} de ${inteiro.format(total)} registros`;
+  if (estado.aba === "alteracoes" && ultima) {
+    const hs = EXEC_ATUAIS.map(x => x.data.slice(11)).reverse();
+    const quando = hs.length === 1 ? `coleta de ${dataBR(ultima.data)}`
+      : `coletas de ${dataBR(DIA_ATUAL)} (${hs.slice(0, -1).join(", ")} e ${hs[hs.length - 1]})`;
+    txt += EXEC_BASE ? `. Alterações ${hs.length === 1 ? "da" : "das"} ${quando}, em relação à versão anterior, de ${dataBR(EXEC_BASE.data)}.` : `. ${quando[0].toUpperCase() + quando.slice(1)}.`;
+  } else if (estado.aba === "historico" && DIA_ATUAL) {
+    txt += `. Alterações registradas antes de ${dataBR(DIA_ATUAL)}.`;
+  }
+  $("contagem").textContent = txt;
 }
 
 function desenharEvolucao() {
-  if (estado.aba !== "alteracoes" || !HIST.length) { $("evolucao").innerHTML = ""; return; }
+  if (estado.aba !== "historico" || !HIST.length) { $("evolucao").innerHTML = ""; return; }
   const soma = (h, k) => estado.edital ? (h.editais[estado.edital] || {})[k] : Object.values(h.editais).reduce((s, e) => s + (e[k] || 0), 0);
   const corpo = HIST.map(h => {
     const tot = soma(h, "orcamento_total"), ap = soma(h, "valor_aprovado");
@@ -388,11 +411,17 @@ function desenharEvolucao() {
 
 function desenharTipos() {
   const sel = $("tipo");
-  sel.hidden = estado.aba !== "alteracoes";
-  const tipos = [...new Set(doEdital(EVENTOS).map(e => e.tipo))].sort();
+  sel.hidden = !ehEventos();
+  const tipos = [...new Set(doEdital(estado.aba === "historico" ? EV_HIST : EV_ATUAIS).map(e => e.tipo))].sort();
   if (!tipos.includes(estado.tipo)) estado.tipo = "";
   sel.innerHTML = `<option value="">Todos os tipos de alteração</option>` +
     tipos.map(t => `<option ${t === estado.tipo ? "selected" : ""}>${esc(t)}</option>`).join("");
+  const sd = $("dia");
+  sd.hidden = estado.aba !== "historico";
+  const dias = [...new Set(doEdital(EV_HIST).map(e => diaDe(e.data)))].sort().reverse();
+  if (!dias.includes(estado.dia)) estado.dia = "";
+  sd.innerHTML = `<option value="">Todos os dias</option>` +
+    dias.map(d => `<option value="${d}"${d === estado.dia ? " selected" : ""}>${dataBR(d)}</option>`).join("");
 }
 
 function metricas(ps) {
@@ -628,7 +657,7 @@ function desenhar() {
   const an = analitica();
   $("busca").hidden = an; $("contagem").hidden = an; $("lista").hidden = an; $("analise").hidden = !an;
   if (an) {
-    $("tipo").hidden = true; $("evolucao").innerHTML = "";
+    $("tipo").hidden = true; $("dia").hidden = true; $("evolucao").innerHTML = "";
     ({distribuicao:desenharDistribuicao, reserva:desenharReserva, simulacao:desenharSimulacao})[estado.aba]();
   } else {
     $("analise").innerHTML = ""; desenharTipos(); desenharTabela(); desenharEvolucao();
@@ -639,12 +668,13 @@ function exportar() {
   if (analitica()) return exportarAnalise();
   const rs = filtradas();
   let cols = colunas().map(c => ({k:c.k, t:c.t, num:c.num}));
-  if (estado.aba !== "alteracoes") {
+  if (!ehEventos()) {
     if (estado.edital) cols.unshift({k:"edital", t:"Seleção pública"});
     cols.splice(cols.findIndex(c => c.k === "proponente") + 1, 0, {k:"cnpj", t:"CNPJ"});
     if (estado.aba === "aprovados") cols.push({k:"resumo", t:"Resumo publicável"});
   } else {
-    cols.splice(1, 0, {k:"edital", t:"Seleção pública"}, {k:"painel", t:"Painel atualizado em"});
+    if (estado.edital) cols.splice(1, 0, {k:"edital", t:"Seleção pública"});
+    cols.splice(2, 0, {k:"painel", t:"Painel atualizado em"});
     cols.splice(cols.findIndex(c => c.k === "proponente") + 1, 0, {k:"cnpj", t:"CNPJ"});
   }
   const cel = (v, c) => {
@@ -674,6 +704,7 @@ $("abas").addEventListener("click", e => {
 });
 $("busca").addEventListener("input", e => { estado.busca = e.target.value; desenharTabela(); });
 $("tipo").addEventListener("change", e => { estado.tipo = e.target.value; desenharTabela(); });
+$("dia").addEventListener("change", e => { estado.dia = e.target.value; desenharTabela(); });
 $("exportar").addEventListener("click", exportar);
 $("tabela").addEventListener("click", e => {
   const th = e.target.closest("th[data-k]");
