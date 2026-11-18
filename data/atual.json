@@ -6,15 +6,15 @@
    "orcamento_total": 120000000.0
   },
   "Mais Inovação - Base Industrial de Defesa - 2": {
-   "titulo": "Finep Inova Mais – Base Industrial de Defesa",
+   "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Base Industrial de Defesa",
    "orcamento_total": 600000000.0
   },
   "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2": {
-   "titulo": "Finep Inova Mais – Cadeias Agroindustriais Sustentáveis",
+   "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Cadeias Agroindustriais Sustentáveis",
    "orcamento_total": 450000000.0
   },
   "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2": {
-   "titulo": "Finep Inova Mais - ECONOMIA CIRCULAR E CIDADES SUSTENTÁVEIS",
+   "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Economia Circular e Cidades Sustentáveis",
    "orcamento_total": 250000000.0
   },
   "Mais Inovação - Mobilidade Sustentável - 2": {
@@ -34,7 +34,7 @@
    "orcamento_total": 300000000.0
   },
   "Mais Inovação - Transformação Mineral - 2": {
-   "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
+   "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Transformação Mineral",
    "orcamento_total": 500000000.0
   },
   "Mais Inovação - Transição Energética - 2": {
@@ -83,6 +83,48 @@
    "fase": "Habilitação",
    "valor_aprovado": null,
    "valor_solicitado": 11130600.0,
+   "resumo": null
+  },
+  {
+   "edital": "Cooperamais Brasil - Empresas",
+   "ref": "5301/26",
+   "cnpj": "63.719.256/0001-73",
+   "proponente": "MARCIO MOTA DA CUNHA LTDA",
+   "linha": "Desenvolvimento de sistemas de processamento e beneficiamento de produtos agrícolas",
+   "uf": "AM",
+   "situacao": "Em análise",
+   "status": "Em análise",
+   "fase": "Habilitação",
+   "valor_aprovado": null,
+   "valor_solicitado": 9236287.43,
+   "resumo": null
+  },
+  {
+   "edital": "Cooperamais Brasil - Empresas",
+   "ref": "5302/26",
+   "cnpj": "22.173.881/0001-85",
+   "proponente": "CENGECT CENTRO TECNOLÓGICO LTDA",
+   "linha": "Desenvolvimento de Trator de pequeno porte, implementos agrícolas compatíveis e nacionalização de peças e sistemas",
+   "uf": "RS",
+   "situacao": "Em análise",
+   "status": "Em análise",
+   "fase": "Habilitação",
+   "valor_aprovado": null,
+   "valor_solicitado": 6665000.0,
+   "resumo": null
+  },
+  {
+   "edital": "Cooperamais Brasil - Empresas",
+   "ref": "5303/26",
+   "cnpj": "17.260.295/0001-38",
+   "proponente": "Tecnofrutt Máquinas e Implementos Agrícolas Ltda",
+   "linha": "Desenvolvimento de Trator de pequeno porte, implementos agrícolas compatíveis e nacionalização de peças e sistemas",
+   "uf": "RS",
+   "situacao": "Em análise",
+   "status": "Em análise",
+   "fase": "Habilitação",
+   "valor_aprovado": null,
+   "valor_solicitado": 8261829.04,
    "resumo": null
   },
   {
@@ -3405,6 +3447,20 @@
   },
   {
    "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5266/26",
+   "cnpj": "54.705.099/0001-56",
+   "proponente": "FCX Aero S.A.",
+   "linha": "Linha Temática II - Sustentabilidade do agronegócio brasileiro: Nacionalização de máquinas e equipamentos",
+   "uf": "BA",
+   "situacao": "Indeferido",
+   "status": "Indeferido",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 23596162.7,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
    "ref": "5269/26",
    "cnpj": "35.671.986/0001-06",
    "proponente": "Neosilos Desenvolvimento de Sistemas Ltda.",
@@ -3415,6 +3471,20 @@
    "fase": null,
    "valor_aprovado": null,
    "valor_solicitado": 5091840.0,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5270/26",
+   "cnpj": "63.719.256/0001-73",
+   "proponente": "MARCIO MOTA DA CUNHA LTDA",
+   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
+   "uf": "AM",
+   "situacao": "Indeferido",
+   "status": "Indeferido",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 6247128.75,
    "resumo": null
   },
   {
@@ -3685,20 +3755,6 @@
   },
   {
    "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
-   "ref": "5266/26",
-   "cnpj": "54.705.099/0001-56",
-   "proponente": "FCX Aero S.A.",
-   "linha": "Linha Temática II - Sustentabilidade do agronegócio brasileiro: Nacionalização de máquinas e equipamentos",
-   "uf": "BA",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 23596162.7,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
    "ref": "5267/26",
    "cnpj": "38.262.591/0001-48",
    "proponente": "HMV FABRICAÇÃO DE TRITURADORES, MÁQUINAS E EQUIPAMENTOS LTDA",
@@ -3723,20 +3779,6 @@
    "fase": "Habilitação",
    "valor_aprovado": null,
    "valor_solicitado": 8655948.52,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
-   "ref": "5270/26",
-   "cnpj": "63.719.256/0001-73",
-   "proponente": "MARCIO MOTA DA CUNHA LTDA",
-   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
-   "uf": "AM",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 6247128.75,
    "resumo": null
   },
   {
@@ -9579,6 +9621,20 @@
   },
   {
    "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
+   "ref": "3815/26",
+   "cnpj": "21.578.099/0001-83",
+   "proponente": "Soma Negócios Inclusivos Ltda",
+   "linha": "Linha 1 – Economia Circular",
+   "uf": "PR",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 6593431.47,
+   "valor_solicitado": null,
+   "resumo": "O projeto “so+ma: Agregador Virtual de Recicláveis por Visão Computacional em Dispositivos Móveis”, fruto da parceria com a UFRJ é uma solução inovadora que responde de forma direta aos desafios históricos da cadeia de recicláveis: descentralização, informalidade e crescente demanda por suprimento qualificado.\nBaseado em tecnologias de inteligência artificial embarcadas em dispositivos acessíveis e de baixa complexidade, o Agregador Virtual de Recicláveis conecta, de forma inédita, cooperativas e associações de catadores a compradores de material reciclável em um único sistema integrado. Ao transformar dados em evidências confiáveis, a plataforma reorganiza a dinâmica de mercado e cria um padrão de transparência e eficiência.\nA solução permite a rastreabilidade completa dos materiais — da geração à transformação — incorporando previsões de volume e análise de qualidade. Esse avanço corrige distorções relevantes no modelo atual de logística reversa, no qual transações fiscais nem sempre refletem o fluxo real de materiais, e fortalece a conformidade com as exigências legais.\nAlinhado à Política Nacional de Resíduos Sólidos (Lei 12.305/2010), o projeto promove a convergência entre interesses econômicos e sociais, fortalecendo a logística reversa e ampliando a inclusão produtiva. Ao democratizar o acesso à tecnologia — hoje restrita por custo e complexidade — o Agregador Virtual de Recicláveis empodera os atores do início da cadeia, promovendo isonomia digital e reduzindo vulnerabilidades operacionais, como fragmentação e volatilidade de preços.\n Esse novo modelo gera impactos diretos em toda a cadeia. Para cooperativas e catadores, abre caminho para maior valorização dos materiais. Para recicladores e indústrias, viabiliza o acesso a volumes maiores e mais qualificados de resíduos rastreados, sem a necessidade de estruturas físicas adicionais. Para as empresas de bens de consumo, garante maior capacidade de atendimento à legislação, através da garantia de suprimento do material reciclável e rastreável, e a programas de ESG comprovando transparência da cadeia e os benefícios associados de diminuição do uso de energia, água e a pegada de carbono associada ao uso de matéria prima reciclável."
+  },
+  {
+   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
    "ref": "0531/26",
    "cnpj": "59.506.710/0001-30",
    "proponente": "HIDROCORE SOLUÇÕES EM INOVAÇÃO TECNOLOGICA LTDA",
@@ -11143,20 +11199,6 @@
    "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 5138683.0,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
-   "ref": "3815/26",
-   "cnpj": "21.578.099/0001-83",
-   "proponente": "Soma Negócios Inclusivos Ltda",
-   "linha": "Linha 1 – Economia Circular",
-   "uf": "PR",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 7038712.28,
    "resumo": null
   },
   {
@@ -15899,7 +15941,7 @@
    "linha": "Linha 3: Mobilidade Metroferroviária",
    "uf": "MG",
    "situacao": "Aprovado",
-   "status": "Em contratação",
+   "status": "Em execução",
    "fase": null,
    "valor_aprovado": 5871530.4,
    "valor_solicitado": null,
@@ -15918,6 +15960,34 @@
    "valor_aprovado": 5060000.0,
    "valor_solicitado": null,
    "resumo": "O projeto SEECOL (Sistema Eletrônico Embarcado para Controle e Otimização de Locomotivas) da Teccom trata do desenvolvimento de uma plataforma eletrônica embarcada para controle integrado de locomotivas diesel-elétricas. O sistema reunirá em uma única arquitetura funções operacionais já presentes nas locomotivas, como controle de tração e frenagem, com novos módulos de monitoramento de qualidade do combustível e controle adaptativo de emissões, todos operando de forma integrada e em tempo real. A plataforma será aplicável tanto em retrofit da frota brasileira em operação quanto como solução para fabricantes nacionais de locomotivas.\n\nO SEECOL é construído a partir de uma unidade de controle principal com arquitetura redundante e software de tempo real, integrando dois módulos que hoje não existem de forma combinada nas locomotivas brasileiras. O primeiro é um sistema de sensoriamento contínuo da qualidade do diesel, capaz de detectar contaminação, degradação e formação de borra em tempo real, problema agravado no Brasil pelo uso obrigatório de biodiesel. O segundo é um módulo de controle de emissões que ajusta dinamicamente a dosagem de reagentes e o funcionamento dos filtros de pós-tratamento conforme as condições reais de operação, diferentemente dos sistemas atuais que operam com parâmetros fixos.\n\nA relevância do projeto se sustenta em dados concretos do setor. O transporte ferroviário de cargas atingiu recorde de 555 milhões de toneladas em 2025, mas os dados do Anuário da ANTT mostram que 66% das manutenções em locomotivas no Brasil ainda são corretivas, a disponibilidade de frota em concessionárias como FCA e FTL não ultrapassa 70%, e o consumo de combustível piorou em ferrovias relevantes como MRS e Rumo Malha Paulista na última década. O SEECOL endereça diretamente essas três dores ao viabilizar diagnóstico preditivo, otimização do consumo e monitoramento integrado da operação.\n\nO principal diferencial do SEECOL é a correlação embarcada, em tempo real, entre dados de qualidade do combustível, parâmetros operacionais e emissões, capacidade que não existe nas soluções disponíveis no mercado, seja nacional ou internacional. As plataformas atuais, fornecidas por empresas como Wabtec, Siemens e Alstom, tratam esses subsistemas de forma independente e são desenvolvidas para condições operacionais de outros mercados. O SEECOL é uma solução nacional concebida para as particularidades brasileiras, incluindo o uso de biodiesel e as características da frota local.\n\nO desenvolvimento contará com a participação de três ICTs. O Instituto Mauá de Tecnologia será responsável pelo desenvolvimento dos algoritmos de controle e validação da eletrônica embarcada. O IPT – Instituto de Pesquisas Tecnológicas contribuirá com a caracterização do diesel/biodiesel e ensaios de emissões em bancada dinamométrica. O SENAI Mario Amato realizará ensaios de compatibilidade material com biodiesel degradado e preparará amostras controladas para validação dos sensores do sistema."
+  },
+  {
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "3092/26",
+   "cnpj": "14.490.065/0001-77",
+   "proponente": "DELIVERY MUCH TECNOLOGIA SA",
+   "linha": "Linha 1: Mobilidade Aérea",
+   "uf": "SC",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 16755782.13,
+   "valor_solicitado": null,
+   "resumo": "O projeto PILAME desenvolve uma inédita Plataforma mundial integrada de logística aérea autônoma e micromobilidade elétrica para entregas de última milha em cidades do interior. Liderado pela Delivery Much (DM) (Proponente), maior franquia nacional de marketplace de delivery em cidades de pequeno e médio porte, em parceria com as coexecutoras Global Drones, que possui larga experiência no desenvolvimento de aeronaves remotamente pilotadas e a AL Drones que participou em mais de 80% dos processos de certificação já emitidos pela ANAC para Drones e as ICTs UFSM e o Instituto SENAI de Inovação em Sistemas Embarcados (ISI-SE), o projeto contempla o desenvolvimento de oito módulos (produtos) inovadores integrados: (i) Plataforma de Inteligência Multimodal (PIM), motor de IA, que decidirá, em tempo real e por pedido, qual modal usar, aéreo ou terrestre (drone, bicicleta elétrica, scooter ou moto elétrica), ou combinação encadeada, considerando carga, distância, clima, disponibilidade de bateria, janela regulatória e demanda da rede; (ii)  Sistema de Gerenciamento de Tráfego Aéreo Não Tripulado (UTM) Local que atua de forma automatizada e digital para coordenar voos em baixa altitude, separando drones de outros tráfegos (como helicópteros) e gerenciando conflitos em áreas não cobertas pelo controle de tráfego aéreo convencional (ATC), permitindo operações e aumentando a segurança de voo, sendo integrado a nova geração do sistema oficial do DECEA, o SARPAS NG e dimensionado para gestão de múltiplos voos além da linha de visão visual (BVLOS) simultâneos em cidades de pequeno e médio porte; (iii) Sistema de Gestão de Tráfego Terrestre Elétrico (SGTTEL) uma plataforma tecnológica voltada para o monitoramento, controle e otimização de frotas de veículos elétricos e da infraestrutura de recarga associada; (iv) Orquestrador Comercial (SaaS) que centraliza, automatiza e coordena diferentes etapas e ferramentas do processo de vendas, transformando etapas fragmentadas em um fluxo contínuo e inteligente conectado à base de mais de 4 milhões de usuários da DM e terá APIs white-label para outros marketplaces; (v) DroneHub, estação modular para pouso, decolagem, recarga, troca rápida de bateria e armazenamento de drones, permitindo operações contínuas e autônomas BVLOS, além da integração com o entregador terrestre; (vi) Estação de Micromobilidade Elétrica, um ponto físico estruturado a ser instalado nas cidades dos franqueados da DM destinado ao estacionamento, organização, recarga, troca rápida de bateria e possível compartilhamento de bicicletas, scooters e motos elétricas, que servirão como \"hubs\" de conexão para o chamado \"transporte de última milha\", sendo que o projeto prevê unidades autônomas e unidades integradas ao DroneHub; (vii) App de Locação de Veículos Elétricos de Micromobilidade (ALVEM),  focado em transporte urbano sustentável e (viii) Drone GD25-DM, nacional, com arquitetura totalmente elétrica (autonomia 30–40 min, payload até 4 kg), comunicação dissimilar 5G multi-operadora (substituindo Starlink) e sistema de paraquedas embarcado em dois dos três protótipos, que será desenvolvido para realizar entregas, com tecnologias embarcadas para voos BVLOS em áreas urbanas. A operação piloto será em Rondônia, no Município de Vilhena e no Mato Grosso no Município de Pontes e Lacerda e tem como meta a redução de: (a) 30% no tempo médio de entrega (de ~52 para ~36 minutos), (b) 100% nas emissões de CO2 nas entregas do Projeto e (c) 10% no volume de km rodados em veículos motorizados de duas rodas. Alinhado às Linhas Temáticas de Mobilidade Aérea e Micromobilidade do Programa Mais Inovação Brasil, fortalece a soberania tecnológica brasileira e uma mobilidade urbana mais moderna, fluída e sustentável, melhorando a qualidade de vida nas cidades brasileiras, democratizando o acesso a serviços de delivery, fortalecendo economias locais, reduzindo assimetrias regionais e contribuindo para a redução de riscos de acidentes de trânsito."
+  },
+  {
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "4312/26",
+   "cnpj": "26.797.752/0001-19",
+   "proponente": "Zuq Performance Inteligente Ltda",
+   "linha": "Linha 4: Micromobilidade",
+   "uf": "AL",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 7106368.5,
+   "valor_solicitado": null,
+   "resumo": "O projeto tem como objetivo desenvolver uma solução nacional integrada de hardware e software para ampliar a segurança, o rastreamento, a gestão e a eficiência de frotas de micromobilidade utilizadas na logística urbana de última milha, com foco em bicicletas elétricas e cargo bikes empregadas no transporte de cargas. A iniciativa prevê o desenvolvimento de dispositivos embarcados miniaturizados e de baixo custo, concebidos especificamente para as características físicas, elétricas e operacionais desses veículos, com recursos de monitoramento, telemetria e contingência para preservação de funções essenciais de localização mesmo após a interrupção da alimentação principal. Ao final, o projeto pretende disponibilizar uma solução tecnológica nacional capaz de reduzir a dependência de equipamentos importados, aumentar a segurança e a rastreabilidade dos ativos e criar condições para ampliar o uso da micromobilidade no transporte urbano de cargas, contribuindo para operações mais eficientes, sustentáveis e de menor impacto ambiental."
   },
   {
    "edital": "Mais Inovação - Mobilidade Sustentável - 2",
@@ -16733,20 +16803,6 @@
   },
   {
    "edital": "Mais Inovação - Mobilidade Sustentável - 2",
-   "ref": "3092/26",
-   "cnpj": "14.490.065/0001-77",
-   "proponente": "DELIVERY MUCH TECNOLOGIA SA",
-   "linha": "Linha 1: Mobilidade Aérea",
-   "uf": "SC",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 16755782.13,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
    "ref": "3164/26",
    "cnpj": "10.467.577/0001-61",
    "proponente": "TURBOMACHINE VEICULOS E MOTORES LTDA",
@@ -16953,20 +17009,6 @@
    "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 5930055.0,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
-   "ref": "4312/26",
-   "cnpj": "26.797.752/0001-19",
-   "proponente": "Zuq Performance Inteligente Ltda",
-   "linha": "Linha 4: Micromobilidade",
-   "uf": "AL",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 7136391.63,
    "resumo": null
   },
   {
@@ -17415,6 +17457,20 @@
    "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 7359270.0,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "5300/26",
+   "cnpj": "04.718.687/0001-56",
+   "proponente": "ANTONELLY CONSTRUÇÕES E SERVIÇOS LTDA.",
+   "linha": "Linha 2: Mobilidade Aquaviária",
+   "uf": "AM",
+   "situacao": "Em análise",
+   "status": "Em análise",
+   "fase": "Habilitação",
+   "valor_aprovado": null,
+   "valor_solicitado": 19193833.18,
    "resumo": null
   },
   {
@@ -18802,6 +18858,20 @@
    "valor_aprovado": 13468444.32,
    "valor_solicitado": null,
    "resumo": "Desenvolver, qualificar e validar industrialmente uma plataforma tecnológica inovadora de\nformulação asséptica de imunobiológicos baseada em filtração esterilizante em sistema fechado."
+  },
+  {
+   "edital": "Mais Inovação - Saúde / Empresas - 2",
+   "ref": "4727/26",
+   "cnpj": "04.254.254/0001-97",
+   "proponente": "CENTRO DE PREVENÇÃO DE CÂNCER E DE PATOLOGIA E IMUNOPATOLOGIA - CPCPI",
+   "linha": "Linha temática II - Produtos Biológicos e Biossimilares",
+   "uf": "PE",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 7238331.05,
+   "valor_solicitado": null,
+   "resumo": "Todo ano, 53.810 brasileiros recebem o diagnóstico de câncer de cólon e reto — o segundo tipo mais frequente no país tanto em homens quanto em mulheres, segundo a Estimativa INCA 2026–2028. Para cada um deles, o Ministério da Saúde recomenda um exame laboratorial que verifica se o sistema celular encarregado de corrigir erros na cópia do DNA (*Mismatch Repair* – MMR) continua funcionando dentro do tumor.\n\nQuando o sistema de reparo está deficiente no tumor, o tratamento indicado muda, tornando esse exame fundamental para a tomada de decisão do oncologista. O mesmo resultado acende um alerta hereditário: pode tratar-se de síndrome de Lynch, condição transmitida na família. Reconhecê-la muda o destino de quem ainda não adoeceu — irmãos e filhos passam a ser acompanhados e podem ter tumores retirados antes de se tornarem câncer. É um exame que protege mais de uma geração.\n\nOs insumos necessários à realização do exame não são fabricados no Brasil. Os anticorpos monoclonais que permitem sua realização são importados. O país assumiu uma obrigação de saúde pública cujo insumo essencial não domina. O custo e a dependência ajudam a explicar por que um exame recomendado para todos ainda não alcança todos e por que alcança menos aqueles que estão longe dos grandes centros.\n\nO BIOMMR se propõe a mudar isso. O projeto desenvolve moléculas novas que exercem a função dos anticorpos monoclonais. Elas serão projetadas por processos computacionais, com auxílio de inteligência artificial, a partir da forma tridimensional dos alvos e, posteriormente, fabricadas por fermentação bacteriana. É o mesmo salto que a biotecnologia já deu em outros campos, aplicado pela primeira vez ao diagnóstico do câncer colorretal no Brasil.\n\nAo redor das moléculas, o projeto constrói o restante do exame: uma versão mais simples da reação, com menos etapas de execução e automação de processos; e a leitura do resultado quantificada por redes neurais, reduzindo a variação entre profissionais. Os resultados serão comparados, caso a caso, com os reagentes importados que servem de referência, em estudos aprovados por comitê de ética."
   },
   {
    "edital": "Mais Inovação - Saúde / Empresas - 2",
@@ -22263,20 +22333,6 @@
   },
   {
    "edital": "Mais Inovação - Saúde / Empresas - 2",
-   "ref": "4727/26",
-   "cnpj": "04.254.254/0001-97",
-   "proponente": "CENTRO DE PREVENÇÃO DE CÂNCER E DE PATOLOGIA E IMUNOPATOLOGIA - CPCPI",
-   "linha": "Linha temática II - Produtos Biológicos e Biossimilares",
-   "uf": "PE",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 7424127.15,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Saúde / Empresas - 2",
    "ref": "4730/26",
    "cnpj": "27.055.841/0001-52",
    "proponente": "CATH - CARE INDUSTRIA IMPORTACAO EXPORTACAO E COMERCIO DE PRODUTOS PARA SAUDE LTDA",
@@ -23523,6 +23579,20 @@
   },
   {
    "edital": "Mais Inovação - Tecnologias Digitais - 2",
+   "ref": "1793/26",
+   "cnpj": "31.119.798/0001-19",
+   "proponente": "DTLABS TECNOLOGIA S.A.",
+   "linha": "Linha Temática 3 - Robótica Avançada com Inteligência Artificial",
+   "uf": "SP",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 6185492.35,
+   "valor_solicitado": null,
+   "resumo": "O projeto propõe o desenvolvimento de um sistema robótico de manipulação, colaborativo e de pequeno porte, com inteligência artificial embarcada, para automatizar tarefas repetitivas como empacotamento, montagem de kits, manipulação de componentes discretos e operações laboratoriais nos setores de transformação, extrativo e de saúde. \n\nA solução combina braço robótico colaborativo com câmeras 2D e 3D, controladores e computador embarcado de alto desempenho, explorando modelos Vision-Language-Action (VLA), que aprendem políticas de controle a partir de dados multimodais, conectando percepção, linguagem e ação em um único sistema. \n\nEssa classe de modelos permite ensinar novas tarefas ao robô por demonstração humana e instruções em linguagem natural, aumentando a flexibilidade frente a variações de posição, orientação e objetos similares em contraste com a robótica rigidamente programada, que exige reprogramação detalhada a cada mudança de cenário.\n\nO projeto será executado em parceria com a Universidade de Brasília (UnB), responsável por validação mecânica, estudos de generalização dos modelos aprendidos e definição de protocolos de segurança para aplicação industrial. Inclui, ainda, a validação experimental em casos representativos de uso industrial e a disponibilização parcial da plataforma em formato aberto (hardware de referência, conjuntos de dados e módulos de software com inteligência artificial embarcada) para uso por outras empresas e instituições brasileiras, contribuindo para o fortalecimento da cadeia nacional de robôs industriais, cadeia produtiva prioritária da Missão 4 da Nova Indústria Brasil e alinhado ao estado da arte internacional."
+  },
+  {
+   "edital": "Mais Inovação - Tecnologias Digitais - 2",
    "ref": "3033/26",
    "cnpj": "04.768.360/0001-99",
    "proponente": "ESCRIBO INOVACAO LTDA",
@@ -23548,6 +23618,20 @@
    "valor_aprovado": 8229957.12,
    "valor_solicitado": null,
    "resumo": "O projeto NeoPlatform: Modelos Fundacionais de IA para Grandes Indústrias tem como objetivo desenvolver uma plataforma nacional para operação, escala, governança, ajuste fino, monitoramento e auditabilidade de sistemas de Inteligência Artificial aplicados a grandes volumes de dados. A iniciativa busca fortalecer a capacidade tecnológica brasileira em IA, reduzindo a dependência de soluções estrangeiras e ampliando a disponibilidade de tecnologias aderentes ao contexto regulatório, linguístico e operacional do Brasil.\n\nA solução proposta contempla o desenvolvimento e aprimoramento de modelos fundacionais e Large Data Models capazes de processar dados estruturados e não estruturados, apoiar análises preditivas, personalização de serviços, atendimento automatizado e tomada de decisão baseada em dados. O projeto também prevê mecanismos de explicabilidade, redução de vieses, controle de alucinações, rastreabilidade, segurança e conformidade com a LGPD, permitindo o uso mais confiável e transparente de IA em ambientes corporativos de alta complexidade.\n\nO desenvolvimento será realizado pela NeoSpace em parceria com a Universidade Federal de Uberlândia, combinando infraestrutura computacional avançada, equipe técnica especializada e pesquisa aplicada em aprendizado profundo, ajuste fino, governança de dados e validação de modelos. Como resultado, espera-se disponibilizar uma plataforma brasileira de IA escalável, auditável e adaptável a diferentes setores econômicos, contribuindo para a inovação tecnológica, a formação de talentos, a geração de empregos qualificados e o fortalecimento do ecossistema nacional de Inteligência Artificial."
+  },
+  {
+   "edital": "Mais Inovação - Tecnologias Digitais - 2",
+   "ref": "3044/26",
+   "cnpj": "07.161.663/0001-37",
+   "proponente": "Clavis BBR Consultoria em Informática S.A.",
+   "linha": "Linha Temática 1 - Desenvolvimento da Pilha de Inteligência Artificial Nacional",
+   "uf": "RJ",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 12175315.8,
+   "valor_solicitado": null,
+   "resumo": "O avanço da supercomputação, da inteligência artificial e das infraestruturas computacionais distribuídas vem ampliando a dependência do país de ambientes críticos de processamento. Esses ambientes concentram dados sensíveis, modelos, workloads científicos e industriais, capacidade computacional escassa e funções operacionais de alto valor estratégico. Apesar disso, ainda são, em grande parte, protegidos por abordagens derivadas da segurança corporativa tradicional, pouco aderentes a requisitos como heterogeneidade de nós, uso compartilhado de recursos, sensibilidade a overhead, rastreabilidade de workloads e governança de infraestrutura híbrida e federada.\n\nNesse contexto, há uma lacuna nacional relevante: o Brasil ainda não dispõe de uma camada especializada de confiança operacional para infraestruturas avançadas de IA/HPC. Essa lacuna limita a capacidade de proteger, monitorar, auditar e governar de forma consistente ambientes que já são essenciais para pesquisa, inovação, defesa, modelagem, simulação e desenvolvimento de aplicações baseadas em IA. Tratar essas infraestruturas como ativos críticos exige mecanismos próprios de segurança, privacidade, observabilidade e controle de uso, capazes de responder às suas peculiaridades técnicas e operacionais.\n\nO CiberPAD propõe enfrentar esse problema por meio do desenvolvimento de uma plataforma nacional voltada à confiança operacional de infraestruturas avançadas de IA/HPC. A solução integrará cibersegurança, observabilidade, governança operacional, integridade de uso de recursos computacionais e proteção de funções críticas, complementadas por mecanismos avançados de proteção criptográfica e por uma metodologia de avaliação de risco, conformidade e readiness. O projeto está alinhado à sublinha 1.3 do edital, ao tratar diretamente de operação de infraestrutura IA/HPC, monitoramento e perfilamento, segurança e privacidade, contribuindo para o fortalecimento da infraestrutura computacional avançada nacional em um domínio sensível para a soberania tecnológica.\n\nA validação do projeto terá referência estratégica no ecossistema do SINAPAD, em especial pela participação do LNCC, mas a solução será concebida desde a origem para aplicação em infraestruturas públicas, privadas e híbridas intensivas em processamento, incluindo centros de pesquisa, clusters corporativos de IA, ambientes de P&D, GPU clouds e data centers especializados. O projeto será liderado pela Clavis, com apoio técnico-científico do LNCC, da UFF e do ITI, reunindo competências em HPC, IA, modelagem analítica, confiança digital e criptografia.\n\nAo final, espera-se gerar um ativo tecnológico nacional capaz de ampliar a segurança, a privacidade, a governança e a confiabilidade operacional de infraestruturas computacionais críticas, reduzindo dependência externa em um campo estratégico para o país. O CiberPAD também deverá criar base para novos produtos e serviços especializados, fortalecer a resiliência cibernética do ecossistema brasileiro de IA/HPC e ampliar a capacidade nacional de operar infraestrutura avançada com maior controle, rastreabilidade e autonomia."
   },
   {
    "edital": "Mais Inovação - Tecnologias Digitais - 2",
@@ -24923,20 +25007,6 @@
   },
   {
    "edital": "Mais Inovação - Tecnologias Digitais - 2",
-   "ref": "1793/26",
-   "cnpj": "31.119.798/0001-19",
-   "proponente": "DTLABS TECNOLOGIA S.A.",
-   "linha": "Linha Temática 3 - Robótica Avançada com Inteligência Artificial",
-   "uf": "SP",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 6485185.06,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Tecnologias Digitais - 2",
    "ref": "1804/26",
    "cnpj": "56.035.876/0001-28",
    "proponente": "IACIT Soluções Tecnológicas SA",
@@ -24947,20 +25017,6 @@
    "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 17012807.04,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Tecnologias Digitais - 2",
-   "ref": "3044/26",
-   "cnpj": "07.161.663/0001-37",
-   "proponente": "Clavis BBR Consultoria em Informática S.A.",
-   "linha": "Linha Temática 1 - Desenvolvimento da Pilha de Inteligência Artificial Nacional",
-   "uf": "RJ",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 12175315.8,
    "resumo": null
   },
   {
@@ -34953,7 +35009,7 @@
    "linha": "Linha 2 – Mineração Urbana",
    "uf": "RS",
    "situacao": "Aprovado",
-   "status": "Em contratação",
+   "status": "Em execução",
    "fase": null,
    "valor_aprovado": 9697590.91,
    "valor_solicitado": null,
@@ -37039,7 +37095,7 @@
    "linha": "Linha 4: Transmissão, segurança e resiliência do Sistema Elétrico Brasileiro",
    "uf": "RJ",
    "situacao": "Aprovado",
-   "status": "Em contratação",
+   "status": "Em execução",
    "fase": null,
    "valor_aprovado": 14074998.76,
    "valor_solicitado": null,
@@ -37198,6 +37254,20 @@
    "valor_aprovado": 5318389.8,
    "valor_solicitado": null,
    "resumo": "O projeto tem como objetivo o desenvolvimento de um processo e a validação de materiais fotocatalíticos avançados à base de terras raras para produção sustentável de hidrogênio (H2). A proposta terá como foco processos de water splitting e reforma fotocatalítica em meio aquoso, utilizando energia luminosa como fonte de ativação, com foco em maior eficiência, estabilidade e aproveitamento da radiação UV-visível.\nA iniciativa se insere no contexto do hidrogênio de baixa emissão de carbono, propondo uma rota limpa para geração de H2 a partir de água e energia solar, sem emissão de gases de efeito estufa. O hidrogênio obtido pode ser classificado como verde, por utilizar recursos renováveis e processos ambientalmente amigáveis.\nO projeto explora materiais contendo elementos de terras raras, cujas propriedades eletrônicas e ópticas favorecem a absorção de luz, a separação eficiente de cargas e a redução da recombinação eletrônica, contribuindo para o aumento do desempenho fotocatalítico. Espera-se, com isso, melhorar a eficiência global do processo, um dos principais desafios tecnológicos da área.\nAlém de seu caráter inovador, a proposta apresenta potencial de impacto em setores estratégicos, incluindo energia limpa, mobilidade sustentável e descarbonização industrial. Ao integrar ciência de materiais e energia renovável, o projeto contribui para o desenvolvimento de tecnologias mais eficientes e sustentáveis, alinhadas à transição energética e à redução das emissões de carbono.\nDessa forma, a iniciativa fortalece a pesquisa aplicada e o avanço tecnológico em hidrogênio de baixa emissão de carbono, promovendo soluções com potencial de escalonamento e relevância para a construção de uma matriz energética mais limpa e sustentável."
+  },
+  {
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "2584/26",
+   "cnpj": "00.321.259/0001-34",
+   "proponente": "Indmor Indústria de Máquinas Ltda",
+   "linha": "Linha 7: Biogás e biometano",
+   "uf": "SP",
+   "situacao": "Aprovado",
+   "status": "Em contratação",
+   "fase": null,
+   "valor_aprovado": 14918402.98,
+   "valor_solicitado": null,
+   "resumo": "A indústria espacial vivencia uma transição estrutural na escolha de propelentes, motivada por metas de eficiência, reutilização e mitigação de emissões associadas ao crescimento do número de lançamentos. Nesse cenário, sistemas baseados em metano líquido e oxigênio líquido vêm sendo desenvolvidos para substituir combustíveis sólidos e líquidos tóxicos e poluentes, como evidenciado pelos motores Raptor (SpaceX), BE-4 (Blue Origin) e Archimedes (Rocket Lab), além do VR-900 da Intuitive Machines, embarcado na missão IM-1 à Lua. Tais arquiteturas oferecem maior impulso específico em relação ao querosene, menor formação de depósitos carbonosos e melhor compatibilidade com ciclos reutilizáveis.\n\nApesar desse avanço, a adoção de metano de origem fóssil limita os benefícios ambientais da transição. O biometano, obtido a partir de resíduos orgânicos e carbono neutro dentro do ciclo natural do carbono, representa uma alternativa estratégica, mas impõe desafios técnicos adicionais: requisitos rigorosos de purificação e liquefação, operação em regime criogênico e controle de contaminantes cuja solidificação pode comprometer válvulas, injetores e linhas de alimentação.\n\nO programa BIO-Orbit, desenvolvido pela Indmor em parceria com a Tenda Digital e o SENAI-SP Distrito Tecnológico, propõe o desenvolvimento, fabricação e demonstração de um motor-foguete bipropelente líquido de 20 kN empregando biometano como combustível e oxigênio líquido (LOX) como oxidante. O projeto integra sistematicamente a cadeia de condicionamento do biometano a um sistema propulsivo de alto desempenho, estabelecendo uma rota tecnológica nacional baseada em combustível renovável e alinhada ao estado da arte internacional.\n\nO escopo técnico abrange o desenvolvimento completo do sistema de propulsão: câmara de combustão regenerativamente resfriada fabricada em Inconel por manufatura aditiva, injetores otimizados para estabilidade de chama, sistema de alimentação criogênico compatível com biometano liquefeito, ignição controlada, empuxo vetorizado (TVC), instrumentação e eletrônica de comando e controle. Em paralelo, será validado o processo de obtenção e qualificação do biometano para uso espacial, etapa inédita no Brasil e determinante para a viabilidade operacional do sistema. A estratégia de validação prevê três unidades do motor: a primeira para testes HILS/SILS, análise de manufatura aditiva e ensaios de cold-flow; as duas restantes para campanha de ensaios estáticos a quente, com avaliação de desempenho, eficiência de combustão, margens térmicas, estabilidade dinâmica e repetibilidade de ignição, assim elevando a maturidade tecnológica do TRL 3 ao TRL 7.\n\nEspera-se demonstrar a viabilidade técnica e operacional do biometano como propelente sustentável para aplicações orbitais e suborbitais, bem como estabelecer competências nacionais em propulsão líquida criogênica. Ao combinar transição energética, inovação em propulsão e engenharia criogênica, o BIO-Orbit busca converter o potencial do biometano em ativo tecnológico estratégico, reduzindo dependências externas e posicionando o Brasil na fronteira da propulsão espacial de baixo impacto ambiental."
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
@@ -38475,6 +38545,20 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "3698/26",
+   "cnpj": "31.090.078/0001-78",
+   "proponente": "OLEOPLAN MATO GROSSO INDUSTRIA DE BIOCOMBUSTIVEL LTDA",
+   "linha": "Linha 6: Processos e componentes para a produção de Combustíveis Sustentáveis",
+   "uf": "MT",
+   "situacao": "Reprovado",
+   "status": "Reprovado",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 18516449.04,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "3703/26",
    "cnpj": "48.828.134/0001-21",
    "proponente": "HCC PPP MS02 SEINFRA SPE S.A",
@@ -39595,20 +39679,6 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
-   "ref": "2584/26",
-   "cnpj": "00.321.259/0001-34",
-   "proponente": "Indmor Indústria de Máquinas Ltda",
-   "linha": "Linha 7: Biogás e biometano",
-   "uf": "SP",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 14918402.98,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "3184/26",
    "cnpj": "48.338.795/0001-79",
    "proponente": "DELVE INDUSTRIA QUIMICA LTDA",
@@ -39815,20 +39885,6 @@
    "fase": "Habilitação",
    "valor_aprovado": null,
    "valor_solicitado": 17399779.14,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transição Energética - 2",
-   "ref": "3698/26",
-   "cnpj": "31.090.078/0001-78",
-   "proponente": "OLEOPLAN MATO GROSSO INDUSTRIA DE BIOCOMBUSTIVEL LTDA",
-   "linha": "Linha 6: Processos e componentes para a produção de Combustíveis Sustentáveis",
-   "uf": "MT",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 18516449.04,
    "resumo": null
   },
   {
@@ -42856,5 +42912,5 @@
    "resumo": null
   }
  ],
- "coletado_em": "2026-11-17 16:12"
+ "coletado_em": "2026-11-18 15:52"
 }

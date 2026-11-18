@@ -1,6 +1,12 @@
 {
  "execucoes": [
   {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "alteracoes": 17,
+   "carga_inicial": false
+  },
+  {
    "data": "2026-11-17 16:12",
    "painel": "2026-11-16",
    "alteracoes": 6,
@@ -50,6 +56,193 @@
   }
  ],
  "eventos": [
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Cooperamais Brasil - Empresas",
+   "ref": "5301/26",
+   "cnpj": "63.719.256/0001-73",
+   "proponente": "MARCIO MOTA DA CUNHA LTDA",
+   "tipo": "Incluída no painel",
+   "de": null,
+   "para": "Em análise (Habilitação)"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Cooperamais Brasil - Empresas",
+   "ref": "5302/26",
+   "cnpj": "22.173.881/0001-85",
+   "proponente": "CENGECT CENTRO TECNOLÓGICO LTDA",
+   "tipo": "Incluída no painel",
+   "de": null,
+   "para": "Em análise (Habilitação)"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Cooperamais Brasil - Empresas",
+   "ref": "5303/26",
+   "cnpj": "17.260.295/0001-38",
+   "proponente": "Tecnofrutt Máquinas e Implementos Agrícolas Ltda",
+   "tipo": "Incluída no painel",
+   "de": null,
+   "para": "Em análise (Habilitação)"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "5300/26",
+   "cnpj": "04.718.687/0001-56",
+   "proponente": "ANTONELLY CONSTRUÇÕES E SERVIÇOS LTDA.",
+   "tipo": "Incluída no painel",
+   "de": null,
+   "para": "Em análise (Habilitação)"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5266/26",
+   "cnpj": "54.705.099/0001-56",
+   "proponente": "FCX Aero S.A.",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5270/26",
+   "cnpj": "63.719.256/0001-73",
+   "proponente": "MARCIO MOTA DA CUNHA LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
+   "ref": "3815/26",
+   "cnpj": "21.578.099/0001-83",
+   "proponente": "Soma Negócios Inclusivos Ltda",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 6593431.47"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "1876/26",
+   "cnpj": "38.229.045/0001-05",
+   "proponente": "WR Engenharia e Consultoria Logística Ltda",
+   "tipo": "Mudança de status",
+   "de": "Em contratação",
+   "para": "Em execução"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "3092/26",
+   "cnpj": "14.490.065/0001-77",
+   "proponente": "DELIVERY MUCH TECNOLOGIA SA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 16755782.13"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "4312/26",
+   "cnpj": "26.797.752/0001-19",
+   "proponente": "Zuq Performance Inteligente Ltda",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 7106368.50"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Saúde / Empresas - 2",
+   "ref": "4727/26",
+   "cnpj": "04.254.254/0001-97",
+   "proponente": "CENTRO DE PREVENÇÃO DE CÂNCER E DE PATOLOGIA E IMUNOPATOLOGIA - CPCPI",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 7238331.05"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Tecnologias Digitais - 2",
+   "ref": "1793/26",
+   "cnpj": "31.119.798/0001-19",
+   "proponente": "DTLABS TECNOLOGIA S.A.",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 6185492.35"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Tecnologias Digitais - 2",
+   "ref": "3044/26",
+   "cnpj": "07.161.663/0001-37",
+   "proponente": "Clavis BBR Consultoria em Informática S.A.",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 12175315.80"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Transformação Mineral - 2",
+   "ref": "3598/26",
+   "cnpj": "10.492.473/0001-07",
+   "proponente": "BIOSYS GESTÃO EM MEIO AMBIENTE LTDA",
+   "tipo": "Mudança de status",
+   "de": "Em contratação",
+   "para": "Em execução"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "1038/26",
+   "cnpj": "28.037.759/0001-68",
+   "proponente": "Evoltz Participações S/A",
+   "tipo": "Mudança de status",
+   "de": "Em contratação",
+   "para": "Em execução"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "2584/26",
+   "cnpj": "00.321.259/0001-34",
+   "proponente": "Indmor Indústria de Máquinas Ltda",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Aprovado (Em contratação) – valor aprovado 14918402.98"
+  },
+  {
+   "data": "2026-11-18 15:52",
+   "painel": "2026-11-16",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "3698/26",
+   "cnpj": "31.090.078/0001-78",
+   "proponente": "OLEOPLAN MATO GROSSO INDUSTRIA DE BIOCOMBUSTIVEL LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Reprovado"
+  },
   {
    "data": "2026-11-17 16:12",
    "painel": "2026-11-16",
