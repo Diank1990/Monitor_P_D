@@ -1,5 +1,5 @@
 {
- "painel_atualizado_em": "2026-11-17",
+ "painel_atualizado_em": "2026-11-18",
  "editais": {
   "Cooperamais Brasil - Empresas": {
    "titulo": "Finep Cooperamais Brasil Tecnologias – Empresas",
@@ -1941,7 +1941,7 @@
    "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
    "uf": "MG",
    "situacao": "Aprovado",
-   "status": "Em contratação",
+   "status": "Em execução",
    "fase": null,
    "valor_aprovado": 6524751.4,
    "valor_solicitado": null,
@@ -3531,6 +3531,62 @@
   },
   {
    "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5275/26",
+   "cnpj": "56.300.137/0002-05",
+   "proponente": "AGROFERTIL FERTILIZANTE LTDA",
+   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
+   "uf": "TO",
+   "situacao": "Indeferido",
+   "status": "Indeferido",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 22464720.0,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5276/26",
+   "cnpj": "00.537.561/0001-24",
+   "proponente": "IDUGEL INDUSTRIAL LTDA",
+   "linha": "Linha Temática II - Sustentabilidade do agronegócio brasileiro: Nacionalização de máquinas e equipamentos",
+   "uf": "MT",
+   "situacao": "Indeferido",
+   "status": "Indeferido",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 5088131.44,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5277/26",
+   "cnpj": "19.096.166/0001-81",
+   "proponente": "GR FERTILIZANTES E DEFENSIVOS AGRÍCOLAS LTDA",
+   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
+   "uf": "GO",
+   "situacao": "Indeferido",
+   "status": "Indeferido",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 6030000.0,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5278/26",
+   "cnpj": "40.525.709/0001-25",
+   "proponente": "Gandolfi Maquinas Ltda",
+   "linha": "Linha Temática II - Sustentabilidade do agronegócio brasileiro: Nacionalização de máquinas e equipamentos",
+   "uf": "MT",
+   "situacao": "Indeferido",
+   "status": "Indeferido",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 7067287.52,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
    "ref": "5285/26",
    "cnpj": "44.666.371/0001-82",
    "proponente": "Camílio Empreendimentos Ltda",
@@ -3779,62 +3835,6 @@
    "fase": "Habilitação",
    "valor_aprovado": null,
    "valor_solicitado": 8655948.52,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
-   "ref": "5275/26",
-   "cnpj": "56.300.137/0002-05",
-   "proponente": "AGROFERTIL FERTILIZANTE LTDA",
-   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
-   "uf": "TO",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 22464720.0,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
-   "ref": "5276/26",
-   "cnpj": "00.537.561/0001-24",
-   "proponente": "IDUGEL INDUSTRIAL LTDA",
-   "linha": "Linha Temática II - Sustentabilidade do agronegócio brasileiro: Nacionalização de máquinas e equipamentos",
-   "uf": "MT",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 5088131.44,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
-   "ref": "5277/26",
-   "cnpj": "19.096.166/0001-81",
-   "proponente": "GR FERTILIZANTES E DEFENSIVOS AGRÍCOLAS LTDA",
-   "linha": "Linha Temática I – P,D&I para aumento da produtividade agrícola e segurança alimentar nacionais",
-   "uf": "GO",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 6030000.0,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
-   "ref": "5278/26",
-   "cnpj": "40.525.709/0001-25",
-   "proponente": "Gandolfi Maquinas Ltda",
-   "linha": "Linha Temática II - Sustentabilidade do agronegócio brasileiro: Nacionalização de máquinas e equipamentos",
-   "uf": "MT",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 7067287.52,
    "resumo": null
   },
   {
@@ -9845,6 +9845,20 @@
   },
   {
    "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
+   "ref": "1735/26",
+   "cnpj": "02.089.969/0001-06",
+   "proponente": "Laticinios Bela Vista S.A.",
+   "linha": "Linha 3 – Água e Esgoto",
+   "uf": "SE",
+   "situacao": "Reprovado",
+   "status": "Reprovado",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 20000000.0,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
    "ref": "1736/26",
    "cnpj": "01.005.845/0011-04",
    "proponente": "TACOM PROJETOS DE BILHETAGEM INTELIGENTE LTDA",
@@ -9883,6 +9897,20 @@
    "fase": null,
    "valor_aprovado": null,
    "valor_solicitado": 7729840.0,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
+   "ref": "1765/26",
+   "cnpj": "06.847.915/0002-02",
+   "proponente": "Nanox Tecnologia s/a",
+   "linha": "Linha 2 – Químicos de Renováveis",
+   "uf": "SP",
+   "situacao": "Reprovado",
+   "status": "Reprovado",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 5079389.2,
    "resumo": null
   },
   {
@@ -10821,34 +10849,6 @@
    "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 7305870.0,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
-   "ref": "1735/26",
-   "cnpj": "02.089.969/0001-06",
-   "proponente": "Laticinios Bela Vista S.A.",
-   "linha": "Linha 3 – Água e Esgoto",
-   "uf": "SE",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 20000000.0,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
-   "ref": "1765/26",
-   "cnpj": "06.847.915/0002-02",
-   "proponente": "Nanox Tecnologia s/a",
-   "linha": "Linha 2 – Químicos de Renováveis",
-   "uf": "SP",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 5079389.2,
    "resumo": null
   },
   {
@@ -17476,10 +17476,10 @@
   {
    "edital": "Mais Inovação - Mobilidade Sustentável - 2",
    "ref": "5307/26",
-   "cnpj": null,
-   "proponente": null,
-   "linha": null,
-   "uf": null,
+   "cnpj": "18.393.441/0001-66",
+   "proponente": "A.R.BELO LTDA",
+   "linha": "Linha 2: Mobilidade Aquaviária",
+   "uf": "AM",
    "situacao": "Em análise",
    "status": "Em análise",
    "fase": "Habilitação",
@@ -17490,10 +17490,10 @@
   {
    "edital": "Mais Inovação - Mobilidade Sustentável - 2",
    "ref": "5308/26",
-   "cnpj": null,
-   "proponente": null,
-   "linha": null,
-   "uf": null,
+   "cnpj": "43.842.943/0001-74",
+   "proponente": "ENOA AMAZONIA ENERGY SYSTEM LTDA",
+   "linha": "Linha 2: Mobilidade Aquaviária",
+   "uf": "AM",
    "situacao": "Em análise",
    "status": "Em análise",
    "fase": "Habilitação",
@@ -23508,6 +23508,20 @@
    "resumo": null
   },
   {
+   "edital": "Mais Inovação - Semicondutores - 2",
+   "ref": "#2408500",
+   "cnpj": "03.514.129/0001-06",
+   "proponente": "AUTO ADESIVOS PARANA S.A.",
+   "linha": "Linha Temática III – Encapsulamento e Teste de Semicondutores (back-end)",
+   "uf": "PR",
+   "situacao": "Em análise",
+   "status": "ENVIADO",
+   "fase": "Habilitação",
+   "valor_aprovado": null,
+   "valor_solicitado": 17203140.42,
+   "resumo": null
+  },
+  {
    "edital": "Mais Inovação - Tecnologias Digitais - 2",
    "ref": "1087/26",
    "cnpj": "13.364.958/0001-03",
@@ -23711,7 +23725,7 @@
    "linha": "Linha Temática 6 - Modelos de IA Generativa",
    "uf": "GO",
    "situacao": "Aprovado",
-   "status": "Em contratação",
+   "status": "Em execução",
    "fase": null,
    "valor_aprovado": 10803527.2,
    "valor_solicitado": null,
@@ -38391,6 +38405,20 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "3184/26",
+   "cnpj": "48.338.795/0001-79",
+   "proponente": "DELVE INDUSTRIA QUIMICA LTDA",
+   "linha": "Linha 8 Captura, armazenamento, uso e monitoramento de CO2",
+   "uf": "MG",
+   "situacao": "Reprovado",
+   "status": "Reprovado",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 14159271.96,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "3185/26",
    "cnpj": "37.911.869/0001-06",
    "proponente": "Obi.tec Consultoria em Tecnologia da Informação LTDA",
@@ -38475,6 +38503,20 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "3257/26",
+   "cnpj": "17.469.701/0001-77",
+   "proponente": "ArcelorMittal Brasil S.A.",
+   "linha": "Linha 6: Processos e componentes para a produção de Combustíveis Sustentáveis",
+   "uf": "SP",
+   "situacao": "Reprovado",
+   "status": "Reprovado",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 50000000.0,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "3580/26",
    "cnpj": "37.975.887/0001-43",
    "proponente": "Agropecuaria Sertao LTDA",
@@ -38527,6 +38569,20 @@
    "fase": null,
    "valor_aprovado": null,
    "valor_solicitado": 18759158.93,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "3684/26",
+   "cnpj": "02.284.444/0001-21",
+   "proponente": "VAMTEC VITÓRIA LTDA",
+   "linha": "Linha 6: Processos e componentes para a produção de Combustíveis Sustentáveis",
+   "uf": "ES",
+   "situacao": "Reprovado",
+   "status": "Reprovado",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 13343186.7,
    "resumo": null
   },
   {
@@ -38597,6 +38653,20 @@
    "fase": null,
    "valor_aprovado": null,
    "valor_solicitado": 6999000.0,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "3717/26",
+   "cnpj": "44.181.382/0001-72",
+   "proponente": "GPX TECNOLOGIA E INVESTIMENTO LTDA",
+   "linha": "Linha 8 Captura, armazenamento, uso e monitoramento de CO2",
+   "uf": "PR",
+   "situacao": "Reprovado",
+   "status": "Reprovado",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 7730682.76,
    "resumo": null
   },
   {
@@ -38821,6 +38891,20 @@
    "fase": null,
    "valor_aprovado": null,
    "valor_solicitado": 9840088.07,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4032/26",
+   "cnpj": "28.175.260/0001-17",
+   "proponente": "GENESIS PESQUISA E DESENVOLVIMENTO LTDA",
+   "linha": "Linha 4: Transmissão, segurança e resiliência do Sistema Elétrico Brasileiro",
+   "uf": "SP",
+   "situacao": "Reprovado",
+   "status": "Reprovado",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 6016255.6,
    "resumo": null
   },
   {
@@ -39553,6 +39637,20 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4533/26",
+   "cnpj": "04.885.819/0001-34",
+   "proponente": "NUTRIPURA NUTRIÇÃO ANIMAL LTDA",
+   "linha": "Linha 8 Captura, armazenamento, uso e monitoramento de CO2",
+   "uf": "MT",
+   "situacao": "Indeferido",
+   "status": "Indeferido",
+   "fase": null,
+   "valor_aprovado": null,
+   "valor_solicitado": 21453005.88,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "4535/26",
    "cnpj": "02.461.767/0001-43",
    "proponente": "TOTALENERGIES EP BRASIL LTDA",
@@ -39693,20 +39791,6 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
-   "ref": "3184/26",
-   "cnpj": "48.338.795/0001-79",
-   "proponente": "DELVE INDUSTRIA QUIMICA LTDA",
-   "linha": "Linha 8 Captura, armazenamento, uso e monitoramento de CO2",
-   "uf": "MG",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 14159271.96,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "3197/26",
    "cnpj": "05.285.488/0001-64",
    "proponente": "Technomar Engenharia LTDA",
@@ -39763,20 +39847,6 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
-   "ref": "3257/26",
-   "cnpj": "17.469.701/0001-77",
-   "proponente": "ArcelorMittal Brasil S.A.",
-   "linha": "Linha 6: Processos e componentes para a produção de Combustíveis Sustentáveis",
-   "uf": "SP",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 50000000.0,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "3579/26",
    "cnpj": "21.652.579/0001-47",
    "proponente": "Microondas Desenvolvimentos e Tecnologias Ltda",
@@ -39829,20 +39899,6 @@
    "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 5063915.92,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transição Energética - 2",
-   "ref": "3684/26",
-   "cnpj": "02.284.444/0001-21",
-   "proponente": "VAMTEC VITÓRIA LTDA",
-   "linha": "Linha 6: Processos e componentes para a produção de Combustíveis Sustentáveis",
-   "uf": "ES",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 13343186.7,
    "resumo": null
   },
   {
@@ -39913,20 +39969,6 @@
    "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 17995145.46,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transição Energética - 2",
-   "ref": "3717/26",
-   "cnpj": "44.181.382/0001-72",
-   "proponente": "GPX TECNOLOGIA E INVESTIMENTO LTDA",
-   "linha": "Linha 8 Captura, armazenamento, uso e monitoramento de CO2",
-   "uf": "PR",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 7730682.76,
    "resumo": null
   },
   {
@@ -40151,20 +40193,6 @@
    "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 9998354.37,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transição Energética - 2",
-   "ref": "4032/26",
-   "cnpj": "28.175.260/0001-17",
-   "proponente": "GENESIS PESQUISA E DESENVOLVIMENTO LTDA",
-   "linha": "Linha 4: Transmissão, segurança e resiliência do Sistema Elétrico Brasileiro",
-   "uf": "SP",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Análise de Mérito",
-   "valor_aprovado": null,
-   "valor_solicitado": 6016255.6,
    "resumo": null
   },
   {
@@ -42381,20 +42409,6 @@
   },
   {
    "edital": "Mais Inovação - Transição Energética - 2",
-   "ref": "4533/26",
-   "cnpj": "04.885.819/0001-34",
-   "proponente": "NUTRIPURA NUTRIÇÃO ANIMAL LTDA",
-   "linha": "Linha 8 Captura, armazenamento, uso e monitoramento de CO2",
-   "uf": "MT",
-   "situacao": "Em análise",
-   "status": "Em análise",
-   "fase": "Habilitação",
-   "valor_aprovado": null,
-   "valor_solicitado": 21453005.88,
-   "resumo": null
-  },
-  {
-   "edital": "Mais Inovação - Transição Energética - 2",
    "ref": "4534/26",
    "cnpj": "35.490.621/0001-85",
    "proponente": "TOVIESUR QUIMICA LTDA",
@@ -42710,7 +42724,7 @@
    "uf": "SP",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 19954285.5,
    "resumo": null
@@ -42926,5 +42940,5 @@
    "resumo": null
   }
  ],
- "coletado_em": "2026-11-19 14:58"
+ "coletado_em": "2026-11-20 15:38"
 }

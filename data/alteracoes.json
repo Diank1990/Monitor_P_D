@@ -1,6 +1,12 @@
 {
  "execucoes": [
   {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "alteracoes": 24,
+   "carga_inicial": false
+  },
+  {
    "data": "2026-11-19 14:58",
    "painel": "2026-11-17",
    "alteracoes": 1060,
@@ -62,6 +68,270 @@
   }
  ],
  "eventos": [
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Semicondutores - 2",
+   "ref": "#2408500",
+   "cnpj": "03.514.129/0001-06",
+   "proponente": "AUTO ADESIVOS PARANA S.A.",
+   "tipo": "Incluída no painel",
+   "de": null,
+   "para": "Em análise (Habilitação)"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "3217/26",
+   "cnpj": "31.585.324/0001-62",
+   "proponente": "FERTILITATIS INNOVATIO PESQUISAS LTDA",
+   "tipo": "Mudança de status",
+   "de": "Em contratação",
+   "para": "Em execução"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5275/26",
+   "cnpj": "56.300.137/0002-05",
+   "proponente": "AGROFERTIL FERTILIZANTE LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5276/26",
+   "cnpj": "00.537.561/0001-24",
+   "proponente": "IDUGEL INDUSTRIAL LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5277/26",
+   "cnpj": "19.096.166/0001-81",
+   "proponente": "GR FERTILIZANTES E DEFENSIVOS AGRÍCOLAS LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2",
+   "ref": "5278/26",
+   "cnpj": "40.525.709/0001-25",
+   "proponente": "Gandolfi Maquinas Ltda",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
+   "ref": "1735/26",
+   "cnpj": "02.089.969/0001-06",
+   "proponente": "Laticinios Bela Vista S.A.",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Reprovado"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
+   "ref": "1765/26",
+   "cnpj": "06.847.915/0002-02",
+   "proponente": "Nanox Tecnologia s/a",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Reprovado"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "5307/26",
+   "cnpj": "18.393.441/0001-66",
+   "proponente": "A.R.BELO LTDA",
+   "tipo": "Razão social alterado(a)",
+   "de": null,
+   "para": "A.R.BELO LTDA"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "5307/26",
+   "cnpj": "18.393.441/0001-66",
+   "proponente": "A.R.BELO LTDA",
+   "tipo": "CNPJ alterado(a)",
+   "de": null,
+   "para": "18.393.441/0001-66"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "5307/26",
+   "cnpj": "18.393.441/0001-66",
+   "proponente": "A.R.BELO LTDA",
+   "tipo": "Linha temática alterado(a)",
+   "de": null,
+   "para": "Linha 2: Mobilidade Aquaviária"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "5307/26",
+   "cnpj": "18.393.441/0001-66",
+   "proponente": "A.R.BELO LTDA",
+   "tipo": "UF alterado(a)",
+   "de": null,
+   "para": "AM"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "5308/26",
+   "cnpj": "43.842.943/0001-74",
+   "proponente": "ENOA AMAZONIA ENERGY SYSTEM LTDA",
+   "tipo": "Razão social alterado(a)",
+   "de": null,
+   "para": "ENOA AMAZONIA ENERGY SYSTEM LTDA"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "5308/26",
+   "cnpj": "43.842.943/0001-74",
+   "proponente": "ENOA AMAZONIA ENERGY SYSTEM LTDA",
+   "tipo": "CNPJ alterado(a)",
+   "de": null,
+   "para": "43.842.943/0001-74"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "5308/26",
+   "cnpj": "43.842.943/0001-74",
+   "proponente": "ENOA AMAZONIA ENERGY SYSTEM LTDA",
+   "tipo": "Linha temática alterado(a)",
+   "de": null,
+   "para": "Linha 2: Mobilidade Aquaviária"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "5308/26",
+   "cnpj": "43.842.943/0001-74",
+   "proponente": "ENOA AMAZONIA ENERGY SYSTEM LTDA",
+   "tipo": "UF alterado(a)",
+   "de": null,
+   "para": "AM"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Tecnologias Digitais - 2",
+   "ref": "3073/26",
+   "cnpj": "30.484.167/0001-36",
+   "proponente": "Noleak Tecnologia da Informacao LTDA",
+   "tipo": "Mudança de status",
+   "de": "Em contratação",
+   "para": "Em execução"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "3184/26",
+   "cnpj": "48.338.795/0001-79",
+   "proponente": "DELVE INDUSTRIA QUIMICA LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Reprovado"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "3257/26",
+   "cnpj": "17.469.701/0001-77",
+   "proponente": "ArcelorMittal Brasil S.A.",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Reprovado"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "3684/26",
+   "cnpj": "02.284.444/0001-21",
+   "proponente": "VAMTEC VITÓRIA LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Reprovado"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "3717/26",
+   "cnpj": "44.181.382/0001-72",
+   "proponente": "GPX TECNOLOGIA E INVESTIMENTO LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Reprovado"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4032/26",
+   "cnpj": "28.175.260/0001-17",
+   "proponente": "GENESIS PESQUISA E DESENVOLVIMENTO LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Análise de Mérito)",
+   "para": "Reprovado"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4533/26",
+   "cnpj": "04.885.819/0001-34",
+   "proponente": "NUTRIPURA NUTRIÇÃO ANIMAL LTDA",
+   "tipo": "Mudança de situação",
+   "de": "Em análise (Habilitação)",
+   "para": "Indeferido"
+  },
+  {
+   "data": "2026-11-20 15:38",
+   "painel": "2026-11-18",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4560/26",
+   "cnpj": "20.198.029/0001-37",
+   "proponente": "MULTICROPSPLUS SERVICE LTDA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
   {
    "data": "2026-11-19 14:58",
    "painel": "2026-11-17",
