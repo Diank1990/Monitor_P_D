@@ -1,5 +1,5 @@
 {
- "painel_atualizado_em": "2026-11-18",
+ "painel_atualizado_em": "2026-11-19",
  "editais": {
   "Cooperamais Brasil - Empresas": {
    "titulo": "Finep Cooperamais Brasil Tecnologias – Empresas",
@@ -23509,6 +23509,20 @@
   },
   {
    "edital": "Mais Inovação - Semicondutores - 2",
+   "ref": "#1543605",
+   "cnpj": "18.115.465/0001-53",
+   "proponente": "RIO SYSTEMS ENGENHARIA do BRASIL LTDA",
+   "linha": "Linha Temática I – Design de Semicondutores",
+   "uf": "RJ",
+   "situacao": "Em análise",
+   "status": "ENVIADO",
+   "fase": "Habilitação",
+   "valor_aprovado": null,
+   "valor_solicitado": null,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Semicondutores - 2",
    "ref": "#2408500",
    "cnpj": "03.514.129/0001-06",
    "proponente": "AUTO ADESIVOS PARANA S.A.",
@@ -40582,7 +40596,7 @@
    "uf": "PR",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 7017944.04,
    "resumo": null
@@ -40610,7 +40624,7 @@
    "uf": "SP",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 31530000.0,
    "resumo": null
@@ -42430,7 +42444,7 @@
    "uf": "PB",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 5012969.23,
    "resumo": null
@@ -42940,5 +42954,5 @@
    "resumo": null
   }
  ],
- "coletado_em": "2026-11-20 15:38"
+ "coletado_em": "2026-11-21 14:37"
 }

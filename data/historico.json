@@ -1,5 +1,101 @@
 [
  {
+  "data": "2026-11-21 14:37",
+  "painel": "2026-11-19",
+  "editais": {
+   "Cooperamais Brasil - Empresas": {
+    "orcamento_total": 120000000.0,
+    "valor_aprovado": 0,
+    "orcamento_disponivel": 120000000.0,
+    "aprovados": 0,
+    "nao_aprovados": 0,
+    "em_analise": 6,
+    "demanda_em_analise": 71200778.6
+   },
+   "Mais Inovação - Base Industrial de Defesa - 2": {
+    "orcamento_total": 600000000.0,
+    "valor_aprovado": 291129821.32,
+    "orcamento_disponivel": 308870178.68,
+    "aprovados": 9,
+    "nao_aprovados": 40,
+    "em_analise": 55,
+    "demanda_em_analise": 942888434.18
+   },
+   "Mais Inovação - Cadeias Agroindustriais Sustentáveis - 2": {
+    "orcamento_total": 450000000.0,
+    "valor_aprovado": 284411048.12,
+    "orcamento_disponivel": 165588951.88,
+    "aprovados": 28,
+    "nao_aprovados": 116,
+    "em_analise": 416,
+    "demanda_em_analise": 4167893100.17
+   },
+   "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2": {
+    "orcamento_total": 250000000.0,
+    "valor_aprovado": 109324383.89,
+    "orcamento_disponivel": 140675616.11,
+    "aprovados": 15,
+    "nao_aprovados": 85,
+    "em_analise": 363,
+    "demanda_em_analise": 3239902901.83
+   },
+   "Mais Inovação - Mobilidade Sustentável - 2": {
+    "orcamento_total": 203800000.0,
+    "valor_aprovado": 52059115.43,
+    "orcamento_disponivel": 151740884.57,
+    "aprovados": 6,
+    "nao_aprovados": 57,
+    "em_analise": 131,
+    "demanda_em_analise": 1132141403.56
+   },
+   "Mais Inovação - Saúde / Empresas - 2": {
+    "orcamento_total": 300000000.0,
+    "valor_aprovado": 179968448.01,
+    "orcamento_disponivel": 120031551.99,
+    "aprovados": 19,
+    "nao_aprovados": 117,
+    "em_analise": 174,
+    "demanda_em_analise": 1502922040.5
+   },
+   "Mais Inovação - Semicondutores - 2": {
+    "orcamento_total": 100000000.0,
+    "valor_aprovado": 33250800.0,
+    "orcamento_disponivel": 66749200.0,
+    "aprovados": 1,
+    "nao_aprovados": 11,
+    "em_analise": 29,
+    "demanda_em_analise": 326480906.45
+   },
+   "Mais Inovação - Tecnologias Digitais - 2": {
+    "orcamento_total": 300000000.0,
+    "valor_aprovado": 149840325.52,
+    "orcamento_disponivel": 150159674.48,
+    "aprovados": 15,
+    "nao_aprovados": 91,
+    "em_analise": 707,
+    "demanda_em_analise": 6863083416.89
+   },
+   "Mais Inovação - Transformação Mineral - 2": {
+    "orcamento_total": 500000000.0,
+    "valor_aprovado": 141844774.71,
+    "orcamento_disponivel": 358155225.29,
+    "aprovados": 11,
+    "nao_aprovados": 34,
+    "em_analise": 112,
+    "demanda_em_analise": 1429273167.95
+   },
+   "Mais Inovação - Transição Energética - 2": {
+    "orcamento_total": 514000000.0,
+    "valor_aprovado": 245949079.27,
+    "orcamento_disponivel": 268050920.73,
+    "aprovados": 19,
+    "nao_aprovados": 169,
+    "em_analise": 229,
+    "demanda_em_analise": 3315128626.31
+   }
+  }
+ },
+ {
   "data": "2026-11-20 15:38",
   "painel": "2026-11-18",
   "editais": {

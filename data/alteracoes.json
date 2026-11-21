@@ -1,6 +1,12 @@
 {
  "execucoes": [
   {
+   "data": "2026-11-21 14:37",
+   "painel": "2026-11-19",
+   "alteracoes": 4,
+   "carga_inicial": false
+  },
+  {
    "data": "2026-11-20 15:38",
    "painel": "2026-11-18",
    "alteracoes": 24,
@@ -68,6 +74,50 @@
   }
  ],
  "eventos": [
+  {
+   "data": "2026-11-21 14:37",
+   "painel": "2026-11-19",
+   "edital": "Mais Inovação - Semicondutores - 2",
+   "ref": "#1543605",
+   "cnpj": "18.115.465/0001-53",
+   "proponente": "RIO SYSTEMS ENGENHARIA do BRASIL LTDA",
+   "tipo": "Incluída no painel",
+   "de": null,
+   "para": "Em análise (Habilitação)"
+  },
+  {
+   "data": "2026-11-21 14:37",
+   "painel": "2026-11-19",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4238/26",
+   "cnpj": "45.990.181/0001-89",
+   "proponente": "Robert Bosch Limitada",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-21 14:37",
+   "painel": "2026-11-19",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4243/26",
+   "cnpj": "09.358.882/0001-36",
+   "proponente": "Agropecuária Vista Alegre Ltda",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-21 14:37",
+   "painel": "2026-11-19",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4537/26",
+   "cnpj": "36.181.849/0001-56",
+   "proponente": "LEGASYS ENGENHARIA LTDA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
   {
    "data": "2026-11-20 15:38",
    "painel": "2026-11-18",
