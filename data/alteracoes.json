@@ -1,6 +1,12 @@
 {
  "execucoes": [
   {
+   "data": "2026-11-22 14:52",
+   "painel": "2026-11-20",
+   "alteracoes": 2,
+   "carga_inicial": false
+  },
+  {
    "data": "2026-11-21 14:37",
    "painel": "2026-11-19",
    "alteracoes": 4,
@@ -74,6 +80,28 @@
   }
  ],
  "eventos": [
+  {
+   "data": "2026-11-22 14:52",
+   "painel": "2026-11-20",
+   "edital": "Mais Inovação - Semicondutores - 2",
+   "ref": "#2241187",
+   "cnpj": "42.550.332/0001-90",
+   "proponente": "Canis Inc. Tecnologia e Comércio S.A.",
+   "tipo": "Incluída no painel",
+   "de": null,
+   "para": "Em análise (Habilitação)"
+  },
+  {
+   "data": "2026-11-22 14:52",
+   "painel": "2026-11-20",
+   "edital": "Mais Inovação - Transformação Mineral - 2",
+   "ref": "#2010955",
+   "cnpj": "46.015.831/0001-38",
+   "proponente": "GTX COMERCIAL IMPORTAÇÃO E EXPORTAÇÃO LTDA",
+   "tipo": "Incluída no painel",
+   "de": null,
+   "para": "Em análise (Habilitação)"
+  },
   {
    "data": "2026-11-21 14:37",
    "painel": "2026-11-19",

@@ -1,5 +1,5 @@
 {
- "painel_atualizado_em": "2026-11-19",
+ "painel_atualizado_em": "2026-11-20",
  "editais": {
   "Cooperamais Brasil - Empresas": {
    "titulo": "Finep Cooperamais Brasil Tecnologias – Empresas",
@@ -23523,6 +23523,20 @@
   },
   {
    "edital": "Mais Inovação - Semicondutores - 2",
+   "ref": "#2241187",
+   "cnpj": "42.550.332/0001-90",
+   "proponente": "Canis Inc. Tecnologia e Comércio S.A.",
+   "linha": "Linha Temática II – Fabricação de Semicondutores (front-end)",
+   "uf": "SP",
+   "situacao": "Em análise",
+   "status": "ENVIADO",
+   "fase": "Habilitação",
+   "valor_aprovado": null,
+   "valor_solicitado": null,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Semicondutores - 2",
    "ref": "#2408500",
    "cnpj": "03.514.129/0001-06",
    "proponente": "AUTO ADESIVOS PARANA S.A.",
@@ -36459,6 +36473,20 @@
   },
   {
    "edital": "Mais Inovação - Transformação Mineral - 2",
+   "ref": "#2010955",
+   "cnpj": "46.015.831/0001-38",
+   "proponente": "GTX COMERCIAL IMPORTAÇÃO E EXPORTAÇÃO LTDA",
+   "linha": "Linha 2 – Mineração Urbana",
+   "uf": "SP",
+   "situacao": "Em análise",
+   "status": "ENVIADO",
+   "fase": "Habilitação",
+   "valor_aprovado": null,
+   "valor_solicitado": null,
+   "resumo": null
+  },
+  {
+   "edital": "Mais Inovação - Transformação Mineral - 2",
    "ref": "#2013404",
    "cnpj": "54.216.299/0001-45",
    "proponente": "ML LOGÍSTICA LTDA",
@@ -42954,5 +42982,5 @@
    "resumo": null
   }
  ],
- "coletado_em": "2026-11-21 14:37"
+ "coletado_em": "2026-11-22 14:52"
 }
