@@ -1,6 +1,12 @@
 {
  "execucoes": [
   {
+   "data": "2026-11-23 19:04",
+   "painel": "2026-11-21",
+   "alteracoes": 0,
+   "carga_inicial": false
+  },
+  {
    "data": "2026-11-22 14:52",
    "painel": "2026-11-20",
    "alteracoes": 2,
