@@ -1,5 +1,5 @@
 {
- "painel_atualizado_em": "2026-11-25",
+ "painel_atualizado_em": "2026-11-26",
  "editais": {
   "Cooperamais Brasil - Empresas": {
    "titulo": "Finep Cooperamais Brasil Tecnologias – Empresas",
@@ -11742,7 +11742,7 @@
    "uf": "RS",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 6159875.56,
    "resumo": null
@@ -17216,7 +17216,7 @@
    "uf": "RS",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 5220274.0,
    "resumo": null
@@ -36592,7 +36592,7 @@
    "uf": "RN",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 5001217.94,
    "resumo": null
@@ -40862,7 +40862,7 @@
    "uf": "SP",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 25597775.91,
    "resumo": null
@@ -41002,7 +41002,7 @@
    "uf": "PR",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 18996434.72,
    "resumo": null
@@ -41058,7 +41058,7 @@
    "uf": "SP",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 19944909.6,
    "resumo": null
@@ -41380,7 +41380,7 @@
    "uf": "RS",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 9828051.45,
    "resumo": null
@@ -41968,7 +41968,7 @@
    "uf": "PR",
    "situacao": "Em análise",
    "status": "Em análise",
-   "fase": "Habilitação",
+   "fase": "Análise de Mérito",
    "valor_aprovado": null,
    "valor_solicitado": 10556053.5,
    "resumo": null
@@ -43360,5 +43360,5 @@
    "resumo": null
   }
  ],
- "coletado_em": "2026-11-26 16:40"
+ "coletado_em": "2026-11-27 16:30"
 }

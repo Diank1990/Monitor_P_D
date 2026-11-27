@@ -1,6 +1,12 @@
 {
  "execucoes": [
   {
+   "data": "2026-11-27 16:30",
+   "painel": "2026-11-26",
+   "alteracoes": 8,
+   "carga_inicial": false
+  },
+  {
    "data": "2026-11-26 16:40",
    "painel": "2026-11-25",
    "alteracoes": 1107,
@@ -98,6 +104,94 @@
   }
  ],
  "eventos": [
+  {
+   "data": "2026-11-27 16:30",
+   "painel": "2026-11-26",
+   "edital": "Mais Inovação - Economia Circular e Cidades Sustentáveis - 2",
+   "ref": "4078/26",
+   "cnpj": "89.717.268/0001-52",
+   "proponente": "SETA SA EXTRATIVA TANINO DE ACACIA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-27 16:30",
+   "painel": "2026-11-26",
+   "edital": "Mais Inovação - Mobilidade Sustentável - 2",
+   "ref": "4628/26",
+   "cnpj": "92.132.968/0001-90",
+   "proponente": "Aerom Sistemas de Transporte S/a",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-27 16:30",
+   "painel": "2026-11-26",
+   "edital": "Mais Inovação - Transformação Mineral - 2",
+   "ref": "5222/26",
+   "cnpj": "35.413.234/0001-45",
+   "proponente": "S M A NATAL SERVIÇOS E LOCAÇÃO DE EQUIPAMENTOS PARA PISCINAS LTDA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-27 16:30",
+   "painel": "2026-11-26",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4200/26",
+   "cnpj": "44.373.108/0001-03",
+   "proponente": "COCAL COMERCIO INDUSTRIA CANAA ACUCAR E ALCOOL SA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-27 16:30",
+   "painel": "2026-11-26",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4237/26",
+   "cnpj": "10.837.578/0001-50",
+   "proponente": "LEÃO ENERGIA INDÚSTRIA DE GERADORES LTDA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-27 16:30",
+   "painel": "2026-11-26",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4244/26",
+   "cnpj": "06.981.381/0001-13",
+   "proponente": "CTC - CENTRO DE TECNOLOGIA CANAVIEIRA S.A.",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-27 16:30",
+   "painel": "2026-11-26",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4337/26",
+   "cnpj": "43.651.954/0001-77",
+   "proponente": "ROBERTO LUZARDO SANTOS LTDA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
+  {
+   "data": "2026-11-27 16:30",
+   "painel": "2026-11-26",
+   "edital": "Mais Inovação - Transição Energética - 2",
+   "ref": "4442/26",
+   "cnpj": "56.795.687/0001-53",
+   "proponente": "Monitorai Tecnologia LTDA",
+   "tipo": "Mudança de fase",
+   "de": "Habilitação",
+   "para": "Análise de Mérito"
+  },
   {
    "data": "2026-11-26 16:40",
    "painel": "2026-11-25",
